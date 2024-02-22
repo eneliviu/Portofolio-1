@@ -8,8 +8,17 @@
   box-sizing: border-box;
 }
 
+root {
+  /* COnvert the default value 0f root fon size from 16 to 10 px 
+   to use base 10 for calculations*/
+  font-size: 62.5%;
+}
+
+
 /* General styles */
 body {
+  /* Scale back the font size to 16px.  */
+  font-size: 1.6rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
