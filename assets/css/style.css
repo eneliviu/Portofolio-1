@@ -115,40 +115,34 @@ main{
 /* ------------------------------ FOOTER ------------------------*/
 
 /* Footer */
-footer{
-  position: fixed;
+
+
+footer div{
   display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+   background-color: #393E46;
+}
+
+#social-networks{
+  position: fixed;
   z-index: 99;
   margin-top: auto;
   bottom: 0;
   padding-top: 1rem;
   width: 100%;
   height: 4rem; 
-  align-content: baseline;
-  background-color: #393E46; 
+  font-size: 180%;  
 }
 
-footer > *{
-  flex-basis: 100%;
-} 
-#social-networks  {
-  font-size: 160%;
-  text-align: center;
-  
-  display:flex;
-  justify-content:space-evenly;
-  color: #eeddcc; 
-}
-
-#social-networks i {
+#social-networks a > i{
   color: #eeddcc;
-  opacity: 0.8;  
- }
+  opacity: 0.8;
+}
 
-#social-networks i:hover {
+#social-networks  a > i:hover {
   color: red;
-  font-size: 150%; 
- 
+  font-size: 140%; 
 }
 
 
