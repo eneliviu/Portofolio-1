@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+root {
+  /* Convert the default value of root font-size from 16 to 10 px 
+   to use base 10 for calculations */
+  font-size: 62.5%;
+}
+
 /* reset the bullet-points list to none */
 ul{
   list-style: none;
@@ -19,125 +25,22 @@ a {
   /*color: inherit;*/
 }
 
-
-root {
-  /* Convert the default value of root font-size from 16 to 10 px 
-   to use base 10 for calculations */
-  font-size: 62.5%;
+h1, h2, h3 {
+  text-align: center;
 }
 
+/* =============================================================================== */
+
+ /* https://htmlcolorcodes.com for colors
 
 /* General styles */
-body {
-  /* Scale back the font size to 16px.  */
-  font-size: 1.6rem;
-  min-height: 100vh;
-  height: 100%; 
-  display: flex;
-  flex-direction: column;
-  /* Generic project styles */
-  color: #313333; /* a gray color, got it with the color pick tool*/
-  font-family: 'Lato', sans-serif;
+
+#navbar{
+  background-color: #3a3a3a; 
+  
 }
 
 
-h1,
-h2,
-h3 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;
-}
-
-/* Utility function to hide elements from the user but still be available for search engines*/
-.hidden-heading {
-  display: none;
-}
-
-
-/* ------------------------------ HEADER ------------------------*/
-
-
-
-/* Header */
-header {
-  background-color: rgba(255,255,255,0.7);
-  padding: 0 1rem;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#menu {
-  font-size: 110%;
-  letter-spacing: 4px;
-  list-style-type: none;
-}
-
-#menu>li {
-  margin-bottom: 1em;
-}
-
-.active {
-  border-bottom: 1px solid #3a3a3a;
-}
-
-/* ------------------------------ NAVBAR ------------------------*/
-
-/* Navbar styles with dropdown toggle */
-nav {
-  position: absolute;
-  background-color: #ffffff;
-  width: 100%;
-  left: 0;
-  padding: 0 1rem;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display: none;
-  top: 100%;
-}
-
-/* Nav toggle */
-#nav-toggle:checked~nav {
-  display: block;
-}
-
-#nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label {
-  font-size: 2rem;
-}
-
-/* ------------------------------ MAIN CONTENT ------------------------*/
-
-/* Main content */
-main {
-  /* Make main element take up any surplus space to push footer down */
-  flex: 1 0 auto;
-  margin-top: auto;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Hero section */
-#hero {
-  height: 600px;
-  width: 100%;
-  background: url("../images/hero-image.webp") no-repeat center center/cover;
-  position: relative;
-}
 
 /* ------------------------------ FOOTER ------------------------*/
 
