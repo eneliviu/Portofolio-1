@@ -1,161 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title> Wonders </title>
+    <title> Wonders </title>
 
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 
-  <!--Popular Google Fonts-->
+    <!-- Stylesheet -->
+    <!-- Most popular Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&display=swap" rel="stylesheet">
+    <!--Own stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-
-  <!--Favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
-
-  <!-- Stylesheet -->
-  <!-- Most popular Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&display=swap" rel="stylesheet">
-  <!--Own stylesheet-->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
+  </head>
 
 
-<body>
+  <body>
 
-  <!-- Semantic tags cheatlist (from top to bottom of a page):
-    <header>
-    <nav>
-    <main>
-    <section>
-    <aside>
-    <artice>
-    <footer>
-  -->
+    <!-- 
+      Semantic tags cheatlist (from top to bottom of a page):
+          <header> Intro
+          <nav> Navbar, links
+          <main> (all of the below except footer)
+          <section> doesn't make sense outside of the site topic
+          <aside> not such relevant to the section topic
+          <artice> independent, make sense alone
+          <footer>
+      
+    -->
 
 
-  <!--Header-->
-  <header class="header">
+    <!--Header-->
+    <header class="header">
+      <a href="index.html"><h1 id="logo"> World's wonders </h1></a>
+    </header>
+ 
 
-    <!-- For stylistic purposes (LoveRunning) enclose header elements in a div -->
-    <div>
-
-      <a href="index.html">
-        <h1 id="logo"> World's wonders </h1>
-      </a>
-
+  
+    <!--Navigation bar -->
+    <nav id="navbar">
       <!-- Add Burger icon to the dropdown Menu in the navbar-->
       <input type="checkbox" id="nav-toggle" name="nav-toggle">
       <label for="nav-toggle" class="nav-toggle-label">
         <i class="fa-solid fa-bars"></i>
       </label>
 
+      <!--Menu (unordered list) items as list elements-->
+      <ul id="menu">
+        <li><a href="index.html" class="active"> Home </a></li>
+        <li><a href="ancient.html"> Ancient world </a></li>
+        <li><a href="modern.html"> Modern world </a></li>
+        <li><a href="natural.html"> Natural wonders </a></li>
+        <li><a href="contact.html"> Join us! </a></li>
+      </ul>
 
-      <!--Navigation bar -->
-      <nav id="navbar">
-        <ul id="menu">
-          <li><a href="index.html" class="active"> Home </a></li>
-          <li><a href="ancient.html"> Ancient world </a></li>
-          <li><a href="modern.html"> Modern world </a></li>
-          <li><a href="natural.html"> Natural wonders </a></li>
-          <li><a href="contact.html"> Join us! </a></li>
-        </ul>
-        <nav />
-    </div>
-
-  </header>
-
-  <!--Main content-->
-  <main>
-
-    <!--Insert the text into divs for stylinng-->
-
-    <section>
-
-      <article>
-        <h2>Introduction</h2>
-        <p>The Seven Wonders of the Ancient and Modern World share several commonalities:</p>
-        <h2>Commonalities</h2>
-        <ul>
-          <li><strong>Architectural Excellence:</strong> All wonders showcase exceptional architectural and engineering
-            skills.</li>
-          <li><strong>Cultural and Historical Significance:</strong> Each wonder is deeply embedded in the culture and
-            history of the civilization that created it.</li>
-          <li><strong>Global Recognition:</strong> These wonders have gained global recognition and are often regarded
-            as
-            iconic symbols of human creativity.</li>
-          <li><strong>Tourist Attractions:</strong> Many wonders have become major tourist attractions, contributing
-            significantly to the tourism industry.</li>
-          <li><strong>Symbolism:</strong> Each wonder carries symbolic meaning, representing the aspirations, beliefs,
-            or
-            achievements of the civilizations that created them.</li>
-          <li><strong>Survival Challenges:</strong> Interestingly, only the Great Pyramid of Giza has survived from the
-            ancient list, while all seven wonders from the modern list are still standing.</li>
-        </ul>
-        <p>While these wonders belong to different eras and civilizations, their commonalities lie in their exceptional
-          craftsmanship, cultural importance, and enduring impact on human history and global heritage.</p>
-      </article>
-
-    </section>
-
-   
-    <section>
-      
-    </section>
-
-  </main>
+    </nav>
 
 
-  <!--Footer-->
-  <footer id="footer">
-    <ul id="social-networks">
-
-      <!-- Add FB icon and link-->
-      <li>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-          aria-label="Visit our Facebook page (opens in a new tab)">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </li>
-
-      <!-- Add Twitter icon and link-->
-      <li>
-        <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-          aria-label="Visit our Twitter page (opens in a new tab)">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-      </li>
-
-      <!-- Add YouTube icon and link-->
-      <li>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-          aria-label="Visit our Youtube channel (opens in a new tab)">
-          <i class="fa-brands fa-square-youtube"></i>
-        </a>
-      </li>
-
-      <!-- Add Instagram icon and link-->
-      <li>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-          aria-label="Visit our Instagram page (opens in a new tab)">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </li>
-
-  </footer>
-
-  <!-- Font Awesome kit -->
-  <script src="https://kit.fontawesome.com/498c29f243.js" crossorigin="anonymous"></script>
 
 
-</body>
+    <!--Main content-->
+    <main>
+
+      <!--Insert the text into divs for stylinng-->
+
+      <section>
+
+        <article id="intro">
+          <h2>Introduction</h2>
+          <p>The Seven Wonders of the Ancient and Modern World share several commonalities:</p>
+          <br>
+
+          <ul>
+            <li><strong>Architectural Excellence:</strong> All wonders showcase exceptional architectural and
+              engineering skills.</li>
+            <li><strong>Cultural and Historical Significance:</strong> Each wonder is deeply embedded in the culture and
+              history of the civilization that created it.</li>
+            <li><strong>Global Recognition:</strong> These wonders have gained global recognition and are often regarded
+              as iconic symbols of human creativity.</li>
+            <li><strong>Tourist Attractions:</strong> Many wonders have become major tourist attractions, contributing
+              significantly to the tourism industry.</li>
+            <li><strong>Symbolism:</strong> Each wonder carries symbolic meaning, representing the aspirations, beliefs,
+              or achievements of the civilizations that created them.</li>
+            <br>
+
+          </ul>
+          <p>While these wonders belong to different eras and civilizations, their commonalities lie in their
+            exceptional craftsmanship, cultural importance, and enduring impact on human history and global heritage.</p>
+        </article>
+
+      </section>
+
+
+      <section>
+
+      </section>
+
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+      <ul id="social-networks">
+
+        <!-- Add FB icon and link-->
+        <li>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+            aria-label="Visit our Facebook page (opens in a new tab)">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+
+        <!-- Add Twitter icon and link-->
+        <li>
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+            aria-label="Visit our Twitter page (opens in a new tab)">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+
+        <!-- Add YouTube icon and link-->
+        <li>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+            aria-label="Visit our Youtube channel (opens in a new tab)">
+            <i class="fa-brands fa-square-youtube"></i>
+          </a>
+        </li>
+
+        <!-- Add Instagram icon and link-->
+        <li>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+            aria-label="Visit our Instagram page (opens in a new tab)">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+
+    </footer>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/498c29f243.js" crossorigin="anonymous"></script>
+
+
+  </body>
 
 
 
