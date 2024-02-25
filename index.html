@@ -51,7 +51,7 @@
       On larger screens, the icon will be replaced by the navbar. 
     -->
     <input type="checkbox" id="nav-toggle" name="nav-toggle">
-    <label for="nav-toggle" class="nav-toggle-label">
+    <label for="nav-toggle" id="nav-toggle-label">
       <i class="fa-solid fa-bars"></i>
     </label>
 
@@ -59,16 +59,11 @@
       Insert the list elements in divs for styling.
     -->
     <nav id="navbar">
-
-      <!--Menu (unordered list) items as list elements-->
-      <div id="menu">
-        <div><a href="index.html" class="active"> Home </a></div>
-        <div><a href="ancient.html"> Ancient world </a></div>
-        <div><a href="modern.html"> Modern world </a></div>
-        <div><a href="natural.html"> Natural wonders </a></div>
-        <div><a href="contact.html"> Join us! </a></div>
-      </div>
-
+      <!--Menu of items as divs-->
+      <div class="menu-item"><a href="index.html" class="active"> Home </a></div>
+      <div class="menu-item"><a href="ancient.html"> Ancient world  </a></div>
+      <div class="menu-item"><a href="gallery.html"> Gallery  </a></div>
+      <div class="menu-item"><a href="contact.html"> Join us! </a></div>
     </nav>
 
   </header>

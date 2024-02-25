@@ -40,8 +40,6 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  padding: 0;
-  margin: 0;
 }
 
 /* =============================================================================== */
@@ -51,62 +49,60 @@ h3 {
 /* HEADER */
 
 #header {
-  background-color: orangered;
+  background-color: orange;
   position: fixed;
   display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
   z-index: 99;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 0;
-  padding-bottom: 0;
   width: 100%;
   font-size: 1.5rem;
-  justify-content: space-between;
-  align-items: baseline;
-  /* box-shadow: 0 2px 2px #c4c3c3; */
-
+  box-shadow: 0 2px 2px #2d3fdd;
 }
 
-#header>a>h1 {
-  color: #301b8f
+#header > a > h1 {
+  color: #dd187a
 }
 
-#menu {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-}
-
-.active {
-  border-bottom: 2px solid #3a3a3a;
-}
-
-#menu div:hover {
-  scale: 1.25;
-}
-
-/* ------------------------------ NAVBAR ------------------------*/
-/* Navbar styles with dropdown toggle */
-#navbar {
-  position: absolute;
-  width: 100%;
-  padding: 0 1rem;
-  display: none;
-  
-}
+/* ------------------------------ NAVBAR DIV ------------------------*/
 
 /* Hide the checkbox */
 #nav-toggle {
   display: none;
 }
 
-/* Hamburger menu icon size */
-#nav-toggle-label {
-  font-size: 4rem;
-  color: #1cbba0
+/* Navbar styles with dropdown toggle */
+#navbar {
+  position: absolute;
+  width: 100%;
+  padding: 0 1rem;
+  display: none; /*no display on small screen*/
+  top: 100%;
+  left: 0;
+}
+
+/* Style Navigation items */
+#navbar div{
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color:rgba(69, 173, 139, 0.719);
+}
+
+/* Underline the active navigatin item: */
+.active {
+  border-bottom: 1px solid #60c768;
+}
+/* Zoom nav-otem when hovering */ 
+.menu-item a:hover {
+  scale: 1.25;
+  color:#eeddcc ;
 }
 
 /* Nav toggle: checked on icon click */
@@ -114,6 +110,11 @@ h3 {
   display: block;
 }
 
+
+/* Hamburger menu icon size and color */
+#nav-toggle-label {
+  font-size: 3rem;
+}
 
 
 /* ------------------------------ MAIN CONTENT ------------------------*/
@@ -177,23 +178,22 @@ footer div {
 
   /* Header */
   #navbar {
-    display: block;
+    display: flex;
+    flex-direction: row;
     position: relative;
     box-shadow: none;
     width: fit-content;
     padding-right: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
   }
 
-  #menu div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #menu div {
+  #navbar div {
     padding-left: 1rem;
   }
 
-  .nav-toggle-label {
+  #nav-toggle-label {
     display: none;
   }
 
