@@ -28,7 +28,7 @@ body {
     /* MOBILE DEFAULT */
     font-family: 'Inter', sans-serif;
     /*min-width: 280px;  Galaxy Fold width as minimum default */
-    color: #3a3a3a;
+    color: #fafafa;
     margin-bottom: 30px; /* Prevent the footer (30px height) to cover the main content */
 }
 
@@ -39,7 +39,7 @@ a {
 }
 
 /* Styles for headers h1 to h3*/
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -66,14 +66,14 @@ h1, h2, h3 {
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
-    box-shadow: 0 2px 2px #2d3fdd;
+    box-shadow: 0 2px 2px #141414;
     /* thin shadow undernith header and main content */
     z-index: 99;
     /* Always on top */
 }
 
 #logo {
-    color: #dd187a;
+    color: #1d1c1b;
     font-size: 3rem;
 }
 
@@ -143,7 +143,6 @@ main {
     flex: 1 0 auto;
     margin-top: 36px;
     background-color: #222831;
-    overflow: auto; /* May be reduntant */
 }
 
 /* --------------------------------------------------------------------*/
@@ -185,38 +184,56 @@ footer div {
 /* --------------------------------------------------------------------*/
 /* ------------------------------ HOME PAGE ------------------------ */
 
-#cover-text {
+/* Hero section */
+#hero {
     display: block;
-    height: auto;
-    background-color: #9993ee;
-    color: #3a3a3a;
-    padding:  5px 5px;
+    height: 400px;
+    width: 100%;
+    object-fit: no-repeat top center / cover;
+    background: url("../images/hero-image-3.webp") no-repeat center center/cover;
 }
 
-#cover-text h3 {
-    margin-top: 10px;
+#cover-text {
+    position: absolute;
+    top: 369px;
+    width: 95%;
+    padding-right: 0.5rem;
+
+    background-color: rgba(241, 107, 118, 0.7);
+}
+#cover-text h2, h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color:#1d1c1b;
+    
 }
 
 #cat-facts {
-    color:#fafafa;
-    margin: 5px;
+    display: block;
+    color:#1917a3;
+    margin: 0.5rem;
 }
 
 #cat-facts li{
     margin-left: 1rem;
     list-style-type:disc;
-} 
+}
+
+#cat-facts > li > h2, h3{
+    color: #fafafa;
+}
+ 
 
 #circle-cover-bg {
 
-    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    background: url('../images/hero-image-2-crop.webp') no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
-    margin-bottom: 20px;
+    margin: 20px 10px;
     /* Makes the square image into a circle */
     border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 /* --------------------------------------------------------------------*/
