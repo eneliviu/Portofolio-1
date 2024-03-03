@@ -29,7 +29,8 @@ body {
     font-family: 'Inter', sans-serif;
     /*min-width: 280px;  Galaxy Fold width as minimum default */
     color: #fafafa;
-    margin-bottom: 30px; /* Prevent the footer (30px height) to cover the main content */
+    margin-bottom: 30px;
+    /* Prevent the footer (30px height) to cover the main content */
 }
 
 /* reset the color and remove the underline for the links in anchor tags*/
@@ -39,11 +40,14 @@ a {
 }
 
 /* Styles for headers h1 to h3*/
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: white;
+    color: #fafafa;
 }
 
 /* Utility function to hide elements from the user but still be available for search engines*/
@@ -95,8 +99,6 @@ h1, h2, h3, h4 {
     display: none;
     /*no display on small screen*/
     top: 100%;
-
-
 }
 
 /* Style Navigation items */
@@ -124,7 +126,7 @@ h1, h2, h3, h4 {
 }
 
 /* Nav toggle: checked on icon click */
-#nav-toggle:checked ~ nav {
+#nav-toggle:checked~nav {
     display: block;
 }
 
@@ -151,7 +153,7 @@ main {
 
 footer div {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -171,7 +173,7 @@ footer div {
     font-size: 200%;
 }
 
-#social-networks a > i {
+#social-networks a>i {
     color: #eeddcc;
     opacity: 0.6;
 }
@@ -186,10 +188,9 @@ footer div {
 
 /* Hero section */
 #hero {
-    display: block;
     height: 400px;
     width: 100%;
-    object-fit: no-repeat top center / cover;
+    
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
 }
 
@@ -198,31 +199,36 @@ footer div {
     top: 369px;
     width: 95%;
     padding-right: 0.5rem;
-
     background-color: rgba(241, 107, 118, 0.7);
 }
-#cover-text h2, h3 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color:#1d1c1b;
-    
+
+#cover-text {
+    h2,
+    h3 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color: #1d1c1b;
+    }
 }
 
-#cat-facts {
-    display: block;
-    color:#1917a3;
-    margin: 0.5rem;
+#reasons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
 }
 
-#cat-facts li{
+#reasons  {
     margin-left: 1rem;
-    list-style-type:disc;
+    list-style-type: disc;
 }
 
-#cat-facts > li > h2, h3{
+#reasons>li>h2,
+h3 {
     color: #fafafa;
 }
- 
+
 
 #circle-cover-bg {
 
@@ -262,13 +268,13 @@ footer div {
     display: none;
 }
 
-.img-caption{
+.img-caption {
     color: #fafafa;
-    text-align:left;
+    text-align: left;
     padding-left: 3rem;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
 }
 
@@ -280,24 +286,24 @@ footer div {
     text-align: center;
     width: 100px;
     cursor: pointer;
-    margin-top: 5px;  
-    margin-bottom: 10px; 
+    margin-top: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    padding-top:3px;
-    padding-bottom:3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     font-size: 1.2rem;
 }
 
 .more-content p {
     color: #d31f1f;
-    text-align:left;
+    text-align: left;
     font-size: 1.2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 0.5rem;
 }
 
-.more-content{
+.more-content {
     display: none;
 }
 
