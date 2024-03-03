@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    min-width: 280px;
     /* MOBILE DEFAULT */
     font-family: 'Inter', sans-serif;
     /*min-width: 280px;  Galaxy Fold width as minimum default */
@@ -62,18 +63,13 @@ h1, h2, h3 {
     display: flex;
     align-items: last baseline;
     justify-content: space-between;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-right: 10px;
     width: 100%;
-    height: auto;
     box-shadow: 0 2px 2px #2d3fdd;
     /* thin shadow undernith header and main content */
     z-index: 99;
     /* Always on top */
-}
-
-#header-logo {
-    margin-right: 150px;
 }
 
 #logo {
@@ -128,12 +124,9 @@ h1, h2, h3 {
 }
 
 /* Nav toggle: checked on icon click */
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
     display: block;
 }
-
-
-
 
 /* Hamburger menu icon size and color */
 #nav-toggle-label {
@@ -150,8 +143,8 @@ main {
     flex: 1 0 auto;
     margin-top: 36px;
     background-color: #222831;
+    overflow: auto; /* May be reduntant */
 }
-
 
 /* --------------------------------------------------------------------*/
 /* ------------------------ FOOTER: DONE ------------------------------*/
@@ -159,10 +152,10 @@ main {
 
 footer div {
     display: flex;
-    z-index: 99;
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 2rem;
     background-color: #393E46;
     height: 3rem;
 }
@@ -170,7 +163,6 @@ footer div {
 #social-networks {
     position: fixed;
     /* Fixed relative to the main footer div*/
-    flex-direction: row;
     margin-top: auto;
     bottom: 0;
     width: 100%;
@@ -191,68 +183,107 @@ footer div {
 }
 
 /* --------------------------------------------------------------------*/
+/* ------------------------------ HOME PAGE ------------------------ */
+
+#cover-text {
+    display: block;
+    height: auto;
+    background-color: #9993ee;
+    color: #3a3a3a;
+    padding:  5px 5px;
+}
+
+#cover-text h3 {
+    margin-top: 10px;
+}
+
+#cat-facts {
+    color:#fafafa;
+    margin: 5px;
+}
+
+#cat-facts li{
+    margin-left: 1rem;
+    list-style-type:disc;
+} 
+
+#circle-cover-bg {
+
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* --------------------------------------------------------------------*/
 /* ------------------------------ GALLERY PAGE ------------------------ */
 
 #gallery {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     overflow: auto;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    text-align: center;
+    object-fit: no-repeat top center / cover;
 }
 
-#info-field {
-    background-color: #7faa3b;
-    text-align:center;
-    /*Move image title and descrition over the image 
-    transform: translateY(-108px);  
-    */
-    /* hide image title and description
-    opacity: 0; 
-    */
+
+/* Hide the card checkbox */
+/* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
+
+
+.card-toggle {
+    display: none;
 }
 
-.card h3 {
-    font-size: 1.5rem;
+.img-caption{
     color: #fafafa;
+    text-align:left;
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
 }
 
-.card hr {
-    height: 1px;
-}
-
-.img-links-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#image-info-button, #image-likes-button{
+.card label {
+    display: inline-block;
+    background-color: #c51212;
+    color: #fafafa;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 5px;  
+    margin-bottom: 10px; 
     border-radius: 5px;
-    font-size: 100%;
-    color: #131212;
-    background-color: #bbcabd; 
-    text-align:center;
-    cursor: pointer;  
-    font-size: 1.5rem; 
+    padding-top:3px;
+    padding-bottom:3px;
+    font-size: 1.2rem;
 }
 
-.img-likes a > i{
-    color: #df2a1d;
-    opacity: 0.6;
+.more-content p {
+    color: #d31f1f;
+    text-align:left;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 0.5rem;
 }
 
-.img-likes a > i:hover {
-    opacity: 1;
-    scale: 1.5;
+.more-content{
+    display: none;
 }
+
 
 /* =========================================== */
 
