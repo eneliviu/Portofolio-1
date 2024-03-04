@@ -1,6 +1,15 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..600&display=swap');
 
+/* Pet Shop Color Palette
+    #ff9934	(255,153,52)
+	#f8f246	(248,242,70)
+    #8c5826	(140,88,38)
+    #e1f1f2	(225,241,242)
+	#2cbbc3	(44,187,195)
+*/
+
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -23,12 +32,12 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 653px;
     min-width: 280px;
     /* MOBILE DEFAULT */
     font-family: 'Inter', sans-serif;
     /*min-width: 280px;  Galaxy Fold width as minimum default */
-    color: #fafafa;
+    color: #fafafa;;
     margin-bottom: 30px;
     /* Prevent the footer (30px height) to cover the main content */
 }
@@ -62,15 +71,15 @@ h4 {
 /* HEADER -> CONTAINS THE NAVBAR */
 
 #header {
-    background-color: #ffffff;
+    background-color: #e1f1f2;
     position: fixed;
     display: flex;
-    align-items: last baseline;
+    align-items: center;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
-    box-shadow: 0 2px 2px #141414;
+    /* box-shadow: 0 2px 2px #141414; */
     /* thin shadow undernith header and main content */
     z-index: 99;
     /* Always on top */
@@ -92,7 +101,7 @@ h4 {
 
 #navbar {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #e1f1f2;
     left: 0;
     width: 100%;
     padding: 0 1rem;
@@ -112,17 +121,18 @@ h4 {
     color: rgba(206, 127, 24, 0.719);
     margin-top: 3px;
     margin-bottom: 3px;
+
 }
 
 /* Underline the active navigatin item: */
 .active {
-    border-bottom: 1px solid #60c768;
+    border-bottom: 1px solid #1d1c1b;
 }
 
 /* Enlarge the nav-item at hover */
 .menu-item a:hover {
     scale: 1.25;
-    color: #eeddcc;
+    color: #1d1c1b;
 }
 
 /* Nav toggle: checked on icon click */
@@ -143,7 +153,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
-    margin-top: 36px;
+    margin-top: 26px;
     background-color: #222831;
 }
 
@@ -235,7 +245,7 @@ h3 {
     background: url('../images/hero-image-2-crop.webp') no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
-    margin: 20px 10px;
+    margin: 10px 10px;
     /* Makes the square image into a circle */
     border-radius: 50%;
     max-width: 400px;
