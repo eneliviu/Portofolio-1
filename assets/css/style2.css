@@ -242,7 +242,6 @@ footer div {
     }
 }
 
-
 #call-to-action-img {
     background: url('../images/hero-image-2-crop.webp') no-repeat top center / cover;
     height: 90vw;
@@ -252,6 +251,13 @@ footer div {
     max-height: 40rem;*/
 }
 
+#call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+}
 #call-to-action-link * {
     text-align: center;
     font-size: 1.2rem;
@@ -288,7 +294,7 @@ footer div {
 /* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
 
 
-.card-toggle {
+#card-toggle-breeds {
     display: none;
 }
 
@@ -318,7 +324,7 @@ footer div {
     font-size: 1.2rem;
 }
 
-.more-content p {
+.card p {
     color: #d31f1f;
     text-align: left;
     font-size: 1.2rem;
@@ -327,10 +333,9 @@ footer div {
     margin-top: 0.5rem;
 }
 
-.more-content {
+#card-text-breeds {
     display: none;
 }
-
 
 /* =========================================== */
 
