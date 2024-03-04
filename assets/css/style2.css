@@ -247,8 +247,8 @@ footer div {
     height: 90vw;
     width: 90vw;
     border-radius: 50%; /* Makes the square image into a circle */
-    /*max-width: 40rem;
-    max-height: 40rem;*/
+    max-width: 40rem;
+    max-height: 40rem;
 }
 
 #call-to-action {
@@ -347,71 +347,8 @@ footer div {
                 Large devices (laptops and desktops, 992px and up) 
 */
 
-/*  Large or landscape phones (567px and up)  */
-@media screen and (min-width: 567px) {
-
-    /* Header */
-    #navbar {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 2rem;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    #navbar div {
-        padding-left: 1rem;
-    }
-
-    #nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
-
-    /* Push main content down to accommodate larger header */
-    main {
-        margin-top: 75px;
-    }
-
-    /* Galley page*/
-    #gallery {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        display: flex;
-        flex-wrap: wrap;
-        object-fit: contain;
-        overflow-x: scroll;
-        overflow-y: scroll;
-
-    }
-
-    .photos img {
-        border-radius: 10px;
-        text-align: center;
-        border-radius: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .photos img:hover {
-        scale: 1.25;
-        transition: 0.6s;
-    }
 
 
-}
+
 
 /* Large devices (laptops and desktops, 992px and up) */
