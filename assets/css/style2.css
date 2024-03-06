@@ -15,7 +15,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none; /* reset the bullet-points list to none */
+    list-style: none;
+    /* reset the bullet-points list to none */
 }
 
 /* Generic project styles */
@@ -32,11 +33,15 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh;
-    min-width: 280px;  /*Galaxy Fold width as minimum default */
+    min-width: 280px;
+    min-height: 653px;
+    /*Galaxy Fold width as minimum default */
     /* MOBILE DEFAULT */
     font-family: 'Inter', sans-serif;
-    color: #fafafa;;
-    margin-bottom: 30px; /* Prevent the footer (30px height) to cover the main content */
+    color: #fafafa;
+    ;
+    margin-bottom: 30px;
+    /* Prevent the footer (30px height) to cover the main content */
 }
 
 /* reset the color and remove the underline for the links in anchor tags*/
@@ -46,7 +51,10 @@ a {
 }
 
 /* Styles for headers h1 to h3*/
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -147,7 +155,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
-    margin-top: 26px;
+    margin-top: 24px;
     background-color: #222831;
 }
 
@@ -200,14 +208,17 @@ footer div {
     width: 100%;
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
 }
+
 #cover-text {
     position: relative;
     top: 32.5rem;
     width: 95%;
     padding-right: 1.5rem;
-    background-color: rgba(255,170,165, 0.6);
+    background-color: rgba(255, 170, 165, 0.6);
 }
+
 #cover-text {
+
     h2,
     h3 {
         padding-top: 0.5rem;
@@ -215,25 +226,29 @@ footer div {
         color: #0e0d0d;
     }
 }
+
 /* ----------- */
 
 /* ADDITIONAL CONTENT SECTION */
 #additional-content {
     margin: 1rem 1rem;
+
     hr {
         border-top: 1px solid #fafafa;
         margin: 0.5rem 0.5rem;
     }
 }
 
-#reasons-1, 
+#reasons-1,
 #reasons-2,
 #reasons-3 {
     padding: 1rem 1rem;
+
     p {
         text-align: left;
         padding-left: 1.5rem;
     }
+
     h3 {
         color: #c51212;
         text-align: left;
@@ -241,34 +256,43 @@ footer div {
     }
 }
 
-#call-to-action-img {
-    background: url('../images/hero-image-2-crop.webp') no-repeat top center / cover;
-    height: 90vw;
-    width: 90vw;
-    max-width: 40rem;
-    max-height: 40rem;
-    border-radius: 50%; /* Makes the square image into a circle */
-
-    
-}
-
-#call-to-action {
+/* ------------ CALL TO ACTION SECTION ---------------*/
+#call-to-action-section {
     margin: 1rem 1rem;
-}
-#call-to-action-link * {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #fafafa;
-    padding: 0.5rem;
-    cursor: pointer;
-}
+    align-items: center;
+    justify-items: center;
 
-#call-to-action-link p > a:hover{
-    text-transform: uppercase;
-    scale: 1.2;
-    color: #ff9934;
-}
+    #call-to-action {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
 
+        #call-to-action-img {
+            background: url('../images/hero-image-2-crop.webp') no-repeat top center / cover;
+            height: 90vw;
+            width: 90vw;
+            max-width: 40rem;
+            max-height: 40rem;
+            border-radius: 50%;
+            /* Makes the square image into a circle */
+        }
+
+        #call-to-action-link * {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #fafafa;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+
+        #call-to-action-link p>a:hover {
+            text-transform: uppercase;
+            scale: 1.2;
+            color: #ff9934;
+        }
+    }
+}
 
 /* --------------------------------------------------------------------*/
 /* ------------------------------ GALLERY PAGE ------------------------ */
@@ -279,53 +303,86 @@ footer div {
 
 #facts {
     margin: 1rem 1rem;
-    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+
+    .card {
+
+        #img-and-caption {
+            width: 90vw;
+            max-width: 40rem;
+
+            img {
+                height: 90vw;
+                max-height: 40rem;
+                object-fit: no-repeat top center / cover;
+                border-radius: 50%;
+            }
+
+            figcaption {
+                position: relative;
+                top:-2px;
+                background-color: rgba(196, 62, 57, 0.952);
+                color: #fafafa;
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+                text-align: center;
+                border-radius: 10px;
+            } /*  #img-and-caption */
+
+        }
+
+        .card-text-breeds label {
+            background-color: #c51212;
+            color: #fafafa;
+            text-transform: capitalize;
+            text-align: center;
+            width: 100px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 1.2rem;
+        }
+
+        .card-text-breeds p {
+            color: #d31f1f;
+            text-align: left;
+            font-size: 1.2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        label {
+            position: relative;
+            top: 1rem;
+            background-color: #c51212;
+            color: #fafafa;
+            text-transform: capitalize;
+            width: auto;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+    } /* .card */
+
+   
 }
 
-.card {
-    text-align: center;
-    img{
-        height: 100vh;
-        width: 100vh;
-        max-width: 40rem;
-        max-height: 40rem;
-        object-fit: no-repeat top center / cover;
-    }
-}
 
 
-.img-caption {
-    color: #fafafa;
-    padding-left: 3rem;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    background-color: rgba(231, 215, 215, 0.4);
-    text-align: center;
-}
 
-.card-text-breeds  label {
-    background-color: #c51212;
-    color: #fafafa;
-    text-transform: capitalize;
-    text-align: center;
-    width: 100px;
-    cursor: pointer;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-size: 1.2rem;
-}
 
-.card-text-breeds p {
-    color: #d31f1f;
-    text-align: left;
-    font-size: 1.2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-top: 0.5rem;
-}
+
+
+
 
 #card-toggle-breeds {
     display: none;
