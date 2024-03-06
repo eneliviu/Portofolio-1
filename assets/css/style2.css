@@ -254,24 +254,32 @@ main {
 
 /* ----------- */
 /* TOP-3 BREEDS */
-#top-breeds {
+#top-three {
     margin: 1rem 1rem;
+    
  
 }
 
 .card {
+    position: relative;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-around;
+    gap: 4rem;
+    justify-content:space-around;
+
     #img-and-caption {
-
-       
-
+   
         img {
-            height: 90vw;
+            
+            /*height: 90vw;
             max-height: 40rem;
-            object-fit: no-repeat top center / cover;
+            */
+            flex-grow: 1;
+            background-size: cover;
+           
+            height: auto;
+            width: 100%;
             border-radius: 50%;
         }
 
@@ -345,20 +353,16 @@ main {
 
 /*------- FIGURE WITH LINK BELOW TOP-3 ----------*/
 #call-to-action {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    text-align: center;
+
     #call-to-action-img {
         background: url('../images/hero-image-1.webp') no-repeat top center / cover;
-       
-        background-size: cover;
         background-position: 75%;
         flex-grow: 1;
         position: relative;
-        height: 15rem;
+        height: 25rem;
         width: 100%;
-        opacity: 1;
         /*filter: blur(4px);
         /*height: 90vw;
         width: 90vw;
