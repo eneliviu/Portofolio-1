@@ -30,6 +30,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     min-height: 100vh;
     min-width: 280px;  /*Galaxy Fold width as minimum default */
     /* MOBILE DEFAULT */
@@ -190,21 +191,22 @@ footer div {
 /* --------------------------------------------------------------------*/
 /* ------------------------------ HOME PAGE ------------------------ */
 
+
+
 /* Hero section */
 #hero {
+    position: relative;
     height: 40rem;
     width: 100%;
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
 }
-
 #cover-text {
-    position: absolute;
-    top: 36.9rem;
+    position: relative;
+    top: 32.5rem;
     width: 95%;
-    padding-right: 0.5rem;
+    padding-right: 1.5rem;
     background-color: rgba(255,170,165, 0.6);
 }
-
 #cover-text {
     h2,
     h3 {
@@ -213,13 +215,10 @@ footer div {
         color: #0e0d0d;
     }
 }
+/* ----------- */
 
-
-#reasons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+/* ADDITIONAL CONTENT SECTION */
+#additional-content {
     margin: 1rem 1rem;
     hr {
         border-top: 1px solid #fafafa;
@@ -246,16 +245,14 @@ footer div {
     background: url('../images/hero-image-2-crop.webp') no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
-    border-radius: 50%; /* Makes the square image into a circle */
     max-width: 40rem;
     max-height: 40rem;
+    border-radius: 50%; /* Makes the square image into a circle */
+
+    
 }
 
 #call-to-action {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin: 1rem 1rem;
 }
 #call-to-action-link * {
@@ -263,6 +260,7 @@ footer div {
     font-size: 1.2rem;
     color: #fafafa;
     padding: 0.5rem;
+    cursor: pointer;
 }
 
 #call-to-action-link p > a:hover{
@@ -275,41 +273,37 @@ footer div {
 /* --------------------------------------------------------------------*/
 /* ------------------------------ GALLERY PAGE ------------------------ */
 
-#gallery {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-}
-
-.card {
-    display: block;
-    text-align: center;
-    object-fit: no-repeat top center / cover;
-}
-
-
 /* Hide the card checkbox */
 /* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
 
 
-#card-toggle-breeds {
-    display: none;
+#facts {
+    margin: 1rem 1rem;
+    
 }
+
+.card {
+    text-align: center;
+    img{
+        height: 100vh;
+        width: 100vh;
+        max-width: 40rem;
+        max-height: 40rem;
+        object-fit: no-repeat top center / cover;
+    }
+}
+
 
 .img-caption {
     color: #fafafa;
-    text-align: left;
     padding-left: 3rem;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
+    background-color: rgba(231, 215, 215, 0.4);
+    text-align: center;
 }
 
-.card label {
-    display: inline-block;
+.card-text-breeds  label {
     background-color: #c51212;
     color: #fafafa;
     text-transform: capitalize;
@@ -324,7 +318,7 @@ footer div {
     font-size: 1.2rem;
 }
 
-.card p {
+.card-text-breeds p {
     color: #d31f1f;
     text-align: left;
     font-size: 1.2rem;
@@ -333,8 +327,26 @@ footer div {
     margin-top: 0.5rem;
 }
 
+#card-toggle-breeds {
+    display: none;
+}
+
+
 #card-text-breeds {
     display: none;
+}
+
+
+
+/* =========================================== */
+/* =============    GALLERY PAGE   =========== */
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
 }
 
 /* =========================================== */
