@@ -164,42 +164,36 @@ main {
 /* ------------------------ FOOTER: DONE ------------------------------*/
 /* --------------------------------------------------------------------*/
 
-footer div {
+#social-networks {
+    position: fixed;
+    /* Fixed relative to the main footer div*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     background-color: #393E46;
     height: 3rem;
-}
-
-#social-networks {
-    position: fixed;
-    /* Fixed relative to the main footer div*/
     margin-top: auto;
     bottom: 0;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    border: 0;
     font-size: 200%;
+
+    a>i {
+        color: #eeddcc;
+        opacity: 0.6;
+    }
+
+    a>i:hover {
+        opacity: 1;
+        scale: 1.25;
+    }
 }
 
-#social-networks a>i {
-    color: #eeddcc;
-    opacity: 0.6;
-}
 
-#social-networks a>i:hover {
-    opacity: 1;
-    scale: 1.25;
-}
 
 /* --------------------------------------------------------------------*/
 /* ------------------------------ HOME PAGE ------------------------ */
-
-
 
 /* Hero section */
 #hero {
@@ -207,27 +201,29 @@ footer div {
     height: 40rem;
     width: 100%;
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
-}
 
-#cover-text {
-    position: relative;
-    top: 32.5rem;
-    width: 95%;
-    padding-right: 1.5rem;
-    background-color: rgba(255, 170, 165, 0.6);
-}
-
-#cover-text {
-
-    h2,
-    h3 {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        color: #0e0d0d;
+    #cover-text {
+        position: relative;
+        top: 32.5rem;
+        width: 95%;
+        padding-right: 1.5rem;
+        background-color: rgba(255, 170, 165, 0.6);
     }
+
+    #cover-text {
+
+        h2,
+        h3 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            color: #0e0d0d;
+        }
+    }
+
 }
 
-/* ----------- */
+
+/* ---------------------------------------- */
 
 /* ADDITIONAL CONTENT SECTION */
 #additional-content {
@@ -237,31 +233,24 @@ footer div {
         border-top: 1px solid #fafafa;
         margin: 0.5rem 0.5rem;
     }
-}
 
-#reasons-1,
-#reasons-2,
-#reasons-3 {
-    padding: 1rem 1rem;
+    .reason {
+        padding: 1rem 1rem;
 
-    p {
-        text-align: left;
-        padding-left: 1.5rem;
+        p {
+            text-align: left;
+            padding-left: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        h3 {
+            color: #c51212;
+            text-align: left;
+            padding-left: 1rem;
+        }
     }
 
-    h3 {
-        color: #c51212;
-        text-align: left;
-        padding-left: 1rem;
-    }
-}
-
-/* ------------ CALL TO ACTION SECTION ---------------*/
-#call-to-action-section {
-    margin: 1rem 1rem;
-    align-items: center;
-    justify-items: center;
-
+    /*------- FIGURE WITH LINK BELOW REASONS ----------*/
     #call-to-action {
         display: flex;
         flex-direction: column;
@@ -278,29 +267,27 @@ footer div {
             /* Makes the square image into a circle */
         }
 
-        #call-to-action-link * {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #fafafa;
-            padding: 0.5rem;
+        #call-to-action-link {
+            margin: 2rem 0;
             cursor: pointer;
+
+            span {
+                font-size: 1.5rem;
+                color: #fafafa;
+            }
+
+            span:hover {
+                text-transform: uppercase;
+                scale: 1.2;
+                color: #ff9934;
+            }
         }
 
-        #call-to-action-link p>a:hover {
-            text-transform: uppercase;
-            scale: 1.2;
-            color: #ff9934;
-        }
     }
 }
 
-/* --------------------------------------------------------------------*/
-/* ------------------------------ GALLERY PAGE ------------------------ */
-
-/* Hide the card checkbox */
-/* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
-
-
+/* ----------- */
+/* RUNNING GIRL TMP */
 #facts {
     margin: 1rem 1rem;
     display: flex;
@@ -323,16 +310,17 @@ footer div {
 
             figcaption {
                 position: relative;
-                top:-2px;
+                top: -2px;
                 background-color: rgba(196, 62, 57, 0.952);
                 color: #fafafa;
                 font-size: 1.5rem;
                 letter-spacing: 2px;
                 text-align: center;
                 border-radius: 10px;
-            } /*  #img-and-caption */
-
+            }
         }
+
+        /*  #img-and-caption */
 
         .card-text-breeds label {
             background-color: #c51212;
@@ -371,18 +359,12 @@ footer div {
             font-size: 1.2rem;
         }
 
-    } /* .card */
+    }
 
-   
+    /* .card */
+
+
 }
-
-
-
-
-
-
-
-
 
 #card-toggle-breeds {
     display: none;
@@ -392,6 +374,9 @@ footer div {
 #card-text-breeds {
     display: none;
 }
+
+/* Hide the card checkbox */
+/* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
 
 
 
