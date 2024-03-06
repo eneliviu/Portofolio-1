@@ -39,46 +39,42 @@
 <body>
 
   <!-- 
-      Semantic tags cheatlist (from top to bottom of a page):
-          <header> Intro
-          <nav> Navbar, links
-          <main> (all of the below except footer)
-          <section> doesn't make sense outside of the site topic
-          <aside> not such relevant to the section topic
-          <artice> independent, make sense alone
-          <footer>
-      
+    Semantic tags cheatlist (from top to bottom of a page):
+        <header> Intro
+        <nav> Navbar, links
+        <main> (all of the below except footer)
+        <section> doesn't make sense outside of the site topic
+        <aside> not such relevant to the section topic
+        <artice> independent, make sense alone
+        <footer>
     -->
   <a href="https://www.freepik.com/icons/cat">Icon by Flat Icons</a>
 
   <!--Header-->
   <header id="header">
 
-
+    <!-----  LOGO  ----->
     <a href="index.html">
       <h1 id="logo"> Purrfecto </h1>
     </a>
 
-    <div id="menu-div">
-      <!-- Add Burger icon to the dropdown Menu in the navbar. 
-        The checkbox will be hidden and activated when clicking on the icon
-        For small screen, only the burger menu icon will be visible.
-        On larger screens, the icon will be replaced by the navbar -->
-      <div id="hamburger-menu">
-        <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" id="nav-toggle-label">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <!-- Navigation bar to be used on larger screens. 
-          Insert the list elements in divs for styling. -->
-        <nav id="navbar">
-          <!--Menu of items as divs-->
-          <div class="menu-item"><a href="index.html" class="active"> Home </a></div>
-          <div class="menu-item"><a href="gallery2.html"> Gallery </a></div>
-          <div class="menu-item"><a href="contact.html" > Join us! </a></div>
-        </nav>
-      </div>
-
+    <!-- Add Burger icon to the dropdown Menu in the navbar. 
+      The checkbox will be hidden and activated when clicking on the icon
+      For small screen, only the burger menu icon will be visible.
+      On larger screens, the icon will be replaced by the navbar -->
+    <div id="hamburger-menu">
+      <input type="checkbox" id="nav-toggle" name="nav-toggle">
+      <label for="nav-toggle" id="nav-toggle-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <!-- Navigation bar to be used on larger screens. 
+        Insert the list elements in divs for styling. -->
+      <nav id="navbar">
+        <!--Menu of items as divs-->
+        <div class="menu-item"><a href="index.html" class="active"> Home </a></div>
+        <div class="menu-item"><a href="gallery2.html"> Gallery </a></div>
+        <div class="menu-item"><a href="contact.html"> Join us! </a></div>
+      </nav>
     </div>
 
   </header>
@@ -99,101 +95,122 @@
     <section id="additional-content" aria-label="Additional Content">
 
       <h2 class="hidden-heading">Reasons for loving cats</h2>
-        
+
       <article>
-
-          <div class="reason">
-            <h3> Stress Relief <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-heart"></i>
-            </h3>
-            <hr>
-            <p>
-              Cats bring joy with their playful antics. Whether chasing laser pointers or exploring boxes, they provide
-              entertainment and can reduce stress. The calming effect of a purring cat is known to promote relaxation.
-            </p>
-          </div>
-
-          <div class="reason">
-            <h3> Low Maintenance <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-heart"></i>
-            </h3>
-            <hr>
-            <p>
-              Cats are easy to care for. They groom themselves, use a litter box, and are independent.
-              This makes them ideal for people with busy lives who still want the joy of having a pet.
-            </p>
-          </div>
-
-          <div class="reason">
-            <h3> Loving Companionship <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-heart"></i>
-            </h3>
-            <hr>
-            <p>
-              Cats are great companions because they offer unconditional love.
-              They express affection through purring, snuggling, and headbutts,
-              providing emotional support and comfort.
-            </p>
-          </div>
-        
-
-          <div class="reason">
-            <h3> Cleanliness <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-heart"></i>
-            </h3>
-            <hr>
-            <p>
-              Cats are meticulous groomers, and they often keep themselves clean. 
-              This trait contributes to a generally tidy living environment for cat owners.
-            </p>
-          </div>
-
+        <div class="reason">
+          <h3> Stress Relief <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+          </h3>
+          <hr>
+          <p>
+            Cats bring joy with their playful antics. Whether chasing laser pointers or exploring boxes, they provide
+            entertainment and can reduce stress. The calming effect of a purring cat is known to promote relaxation.
+          </p>
+        </div>
       </article>
 
-    <!--------- </section> ---------->
+      <article>
+        <div class="reason">
+          <h3> Low Maintenance <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+          </h3>
+          <hr>
+          <p>
+            Cats are easy to care for. They groom themselves, use a litter box, and are independent.
+            This makes them ideal for people with busy lives who still want the joy of having a pet.
+          </p>
+        </div>
+      </article>
 
-    <!-------- FACTS SECTION (RUNNING GIRL TMP)    
-    <section id="facts" aria="Miscellaneous facts about cats">
-      <h2 class="hidden-heading"> Facts about cats </h2>
-      <article id="top-breeds-family" aria="Top three best cats for families with children">
+      <article>
+        <div class="reason">
+          <h3> Loving Companionship <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+          </h3>
+          <hr>
+          <p>
+            Cats are great companions because they offer unconditional love.
+            They express affection through purring, snuggling, and headbutts,
+            providing emotional support and comfort.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <div class="reason">
+          <h3> Cleanliness <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+          </h3>
+          <hr>
+          <p>
+            Cats are meticulous groomers, and they often keep themselves clean.
+            This trait contributes to a generally tidy living environment for cat owners.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+    <!---------------------------------------------------->
+    <!---------------------------------------------------->
+    <!-------- CARDS ------------------------------------->
+    <div id="top-three">
+      <h2 class="hidden-heading"> Top-3 best cat breeds </h2>
+
+      <article id="top-breeds" aria="Top-3 best cat breeds for families with kids">
+        
         <div class="card">
-          <input type="checkbox" id="card-toggle-breeds">
           <div id="img-and-caption">
             <img src="assets/images/reasons-image.webp" alt="smiling girl running">
-            <figcaption >Cat image facts</figcaption>  
+            <figcaption>Cat image facts</figcaption>
           </div>
           <div id="card-text-breeds">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo.</p>
-            <label for="card-toggle-breeds">Show less</label>
           </div>
-          <label for="card-toggle-breeds">Read more</label>
+        <div>
+
+        <div class="card">
+          <div id="img-and-caption">
+            <img src="assets/images/reasons-image.webp" alt="smiling girl running">
+            <figcaption>Cat image facts</figcaption>
+          </div>
+          <div id="card-text-breeds">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo.</p>
+          </div>
         </div>
+
+
+
       </article>
 
-    </section>
-    ------->
-    <!-------------- CALL-TO-ACTION-SECTION 
-    
-    <section id="call-to-action-section" aria="Link to image gallery">
-      -------------->
-     
-      <div id="call-to-action">
-        <div id="call-to-action-img"></div>
-        <div id="call-to-action-link">
-          <a href="contact.html"> <span>Join Our Feline Community!</span></a> 
-        </div>
+    </div>
+
+
+    <section id="call-to-action">
+      <div id="call-to-action-img"></div>
+
+      <div id="call-to-action-gallery">
+        <a href="gallery2.html"> <span>Visit our gallery!</span></a>
       </div>
-    </section>
+
+      <div id="call-to-action-join">
+        <a href="contact.html"> <span>Join our feline community!</span></a>
+      </div>
     
+    </section>
     <!---------------------------------------------------->
+    <!---------------------------------------------------->
+
+    <section id="call-to-action-section" aria="Link to image gallery">
+
 
   </main>
 
 
-  <!--Footer-->
+  <!------  FOOTER ------------------------->
   <footer>
 
     <!-- Add Social Networks icons and links-->
@@ -236,10 +253,10 @@
 
 
   </footer>
+  <!---------------------------------------->
 
   <!-- Font Awesome kit -->
   <script src="https://kit.fontawesome.com/498c29f243.js" crossorigin="anonymous"></script>
-
 
 </body>
 

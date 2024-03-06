@@ -8,7 +8,7 @@
     #e1f1f2	(225,241,242)
 	#2cbbc3	(44,187,195)
 */
-
+/* https://htmlcolorcodes.com for colors
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -53,8 +53,7 @@ a {
 /* Styles for headers h1 to h3*/
 h1,
 h2,
-h3,
-h4 {
+h3 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -67,8 +66,6 @@ h4 {
 }
 
 /* =============================================================================== */
-
-/* https://htmlcolorcodes.com for colors
 
 /* HEADER -> CONTAINS THE NAVBAR */
 
@@ -84,70 +81,73 @@ h4 {
     /* box-shadow: 0 2px 2px #141414; */
     /* thin shadow undernith header and main content */
     z-index: 99;
+
     /* Always on top */
+    #logo {
+        color: #1d1c1b;
+        font-size: 3rem;
+    }
+
+    /* ----- NAVBAR / MENU AS DIV INSIDE HEADER-------*/
+    #hamburger-menu {
+
+        /* Hide the checkbox */
+        #nav-toggle {
+            display: none;
+        }
+
+        /* Navbar styles with dropdown toggle */
+        #navbar {
+            position: absolute;
+            background-color: #e1f1f2;
+            left: 0;
+            width: 100%;
+            padding: 0 1rem;
+            display: none;
+            /*no display on small screen*/
+            top: 100%;
+
+            /* Style Navigation items */
+            .menu-item {
+                display: flex;
+                align-items: center;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: rgba(206, 127, 24, 0.719);
+                margin-top: 3px;
+                margin-bottom: 3px;
+
+            }
+
+            /* Enlarge the nav-item at hover */
+            a:hover {
+                scale: 1.25;
+                color: #1d1c1b;
+            }
+
+            /* Underline the active navigatin item: */
+            .active {
+                border-bottom: 1px solid #1d1c1b;
+            }
+
+        }
+
+        /* Nav toggle: checked on icon click */
+        #nav-toggle:checked~nav {
+            display: block;
+        }
+
+        /* Hamburger menu icon size and color */
+        #nav-toggle-label {
+            font-size: 3rem;
+            color: #222831;
+        }
+
+    }
+
 }
-
-#logo {
-    color: #1d1c1b;
-    font-size: 3rem;
-}
-
-/* ----- NAVBAR DIV INSIDE HEADER-------*/
-
-/* Hide the checkbox */
-#nav-toggle {
-    display: none;
-}
-
-/* Navbar styles with dropdown toggle */
-
-#navbar {
-    position: absolute;
-    background-color: #e1f1f2;
-    left: 0;
-    width: 100%;
-    padding: 0 1rem;
-    display: none;
-    /*no display on small screen*/
-    top: 100%;
-}
-
-/* Style Navigation items */
-.menu-item {
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: rgba(206, 127, 24, 0.719);
-    margin-top: 3px;
-    margin-bottom: 3px;
-
-}
-
-/* Underline the active navigatin item: */
-.active {
-    border-bottom: 1px solid #1d1c1b;
-}
-
-/* Enlarge the nav-item at hover */
-.menu-item a:hover {
-    scale: 1.25;
-    color: #1d1c1b;
-}
-
-/* Nav toggle: checked on icon click */
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-/* Hamburger menu icon size and color */
-#nav-toggle-label {
-    font-size: 3rem;
-    color: #222831;
-}
-
 
 /* ------------------------------ MAIN CONTENT ------------------------*/
 
@@ -157,8 +157,8 @@ main {
     flex: 1 0 auto;
     margin-top: 24px;
     background-color: #222831;
-}
 
+}
 
 /* --------------------------------------------------------------------*/
 /* ------------------------ FOOTER: DONE ------------------------------*/
@@ -191,7 +191,6 @@ main {
 }
 
 
-
 /* --------------------------------------------------------------------*/
 /* ------------------------------ HOME PAGE ------------------------ */
 
@@ -222,11 +221,12 @@ main {
 
 }
 
-
 /* ---------------------------------------- */
 
 /* ADDITIONAL CONTENT SECTION */
 #additional-content {
+    display: flex;
+    flex-wrap: wrap;
     margin: 1rem 1rem;
 
     hr {
@@ -250,121 +250,88 @@ main {
         }
     }
 
-    /*------- FIGURE WITH LINK BELOW REASONS ----------*/
-    #call-to-action {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-
-        #call-to-action-img {
-            background: url('../images/hero-image-2-crop.webp') no-repeat top center / cover;
-            height: 90vw;
-            width: 90vw;
-            max-width: 40rem;
-            max-height: 40rem;
-            border-radius: 50%;
-            /* Makes the square image into a circle */
-        }
-
-        #call-to-action-link {
-            margin: 2rem 0;
-            cursor: pointer;
-
-            span {
-                font-size: 1.5rem;
-                color: #fafafa;
-            }
-
-            span:hover {
-                text-transform: uppercase;
-                scale: 1.2;
-                color: #ff9934;
-            }
-        }
-
-    }
 }
 
 /* ----------- */
-/* RUNNING GIRL TMP */
-#facts {
+/* TOP-3 BREEDS */
+#top-breeds {
     margin: 1rem 1rem;
+ 
+}
+
+.card {
     display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    #img-and-caption {
 
-    .card {
+       
 
-        #img-and-caption {
-            width: 90vw;
-            max-width: 40rem;
-
-            img {
-                height: 90vw;
-                max-height: 40rem;
-                object-fit: no-repeat top center / cover;
-                border-radius: 50%;
-            }
-
-            figcaption {
-                position: relative;
-                top: -2px;
-                background-color: rgba(196, 62, 57, 0.952);
-                color: #fafafa;
-                font-size: 1.5rem;
-                letter-spacing: 2px;
-                text-align: center;
-                border-radius: 10px;
-            }
+        img {
+            height: 90vw;
+            max-height: 40rem;
+            object-fit: no-repeat top center / cover;
+            border-radius: 50%;
         }
 
-        /*  #img-and-caption */
-
-        .card-text-breeds label {
-            background-color: #c51212;
-            color: #fafafa;
-            text-transform: capitalize;
-            text-align: center;
-            width: 100px;
-            cursor: pointer;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            padding-top: 3px;
-            padding-bottom: 3px;
-            font-size: 1.2rem;
-        }
-
-        .card-text-breeds p {
-            color: #d31f1f;
-            text-align: left;
-            font-size: 1.2rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            margin-top: 0.5rem;
-        }
-
-        label {
+        figcaption {
             position: relative;
-            top: 1rem;
-            background-color: #c51212;
+            top: -2px;
+            background-color: rgba(196, 62, 57, 0.952);
             color: #fafafa;
-            text-transform: capitalize;
-            width: auto;
-            cursor: pointer;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-align: center;
+            border-radius: 10px;
         }
-
     }
 
-    /* .card */
+    /*  #img-and-caption */
 
+    .card-text-breeds label {
+        background-color: #c51212;
+        color: #fafafa;
+        text-transform: capitalize;
+        text-align: center;
+        width: 100px;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 1.2rem;
+    }
+
+    .card-text-breeds p {
+        color: #d31f1f;
+        text-align: left;
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    label {
+        position: relative;
+        top: 1rem;
+        background-color: #c51212;
+        color: #fafafa;
+        text-transform: capitalize;
+        width: auto;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
 
 }
+
+/* .card */
+
+
+
 
 #card-toggle-breeds {
     display: none;
@@ -375,10 +342,55 @@ main {
     display: none;
 }
 
+
+/*------- FIGURE WITH LINK BELOW TOP-3 ----------*/
+#call-to-action {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #call-to-action-img {
+        background: url('../images/hero-image-1.webp') no-repeat top center / cover;
+       
+        background-size: cover;
+        background-position: 75%;
+        flex-grow: 1;
+        position: relative;
+        height: 15rem;
+        width: 100%;
+        opacity: 1;
+        /*filter: blur(4px);
+        /*height: 90vw;
+        width: 90vw;
+        /*max-width: 40rem;
+        max-height: 40rem;
+        /*border-radius: 50%;*/
+        /* Makes the square image into a circle */
+        
+    }
+
+    #call-to-action-gallery,
+    #call-to-action-join {
+        margin: 1rem 0;
+        cursor: pointer;
+        text-transform: capitalize;
+
+        span {
+            font-size: 1.5rem;
+            color: #fafafa;
+        }
+
+        :hover {
+            text-transform: uppercase;
+            scale: 1.2;
+            color: #ff9934;
+        }
+    }
+
+}
+
 /* Hide the card checkbox */
 /* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
-
-
 
 /* =========================================== */
 /* =============    GALLERY PAGE   =========== */
