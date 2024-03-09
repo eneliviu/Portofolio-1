@@ -18,6 +18,7 @@
     list-style: none;
     /* reset the bullet-points list to none */
 }
+
 button {
     border: initial;
     background: initial;
@@ -37,15 +38,14 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     min-width: 280px;
-    min-height: 653px;
+
     /*Galaxy Fold width as minimum default */
     /* MOBILE DEFAULT */
     font-family: 'Inter', sans-serif;
     color: #fafafa;
-    ;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     /* Prevent the footer (30px height) to cover the main content */
 }
 
@@ -160,7 +160,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 36px;
+    margin-top: 24px;
     flex: 1 0 auto;
     background-color: #222831;
     min-width: 280px;
@@ -179,11 +179,12 @@ main {
     align-items: center;
     gap: 4rem;
     background-color: #393E46;
-    height: 3rem;
+    height: 4rem;
     margin-top: auto;
     bottom: 0;
     width: 100%;
-    font-size: 200%;
+    font-size: 250%;
+
 
     a>i {
         color: #eeddcc;
@@ -230,14 +231,25 @@ main {
 /* ---------------------------------------- */
 
 /* ADDITIONAL CONTENT SECTION */
+#why-cats {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    min-width: 280px;
+
+    h2 {
+        color: #eba0a0;
+        font-size: 250%;
+    }
+}
+
 #additional-content {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    columns: 1;
-    margin: 1rem 1rem;
-    justify-content: space-around;
-
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 1.5rem;
 
     hr {
         border-top: 1px solid #fafafa;
@@ -246,12 +258,16 @@ main {
     }
 
     .reason {
+        display: flex;
+        flex-direction: column;
         padding: 0 1rem;
+
         h3 {
-            color: #c51212;
-            text-align: left;
+            color: #eba0a0;
             padding-left: 1rem;
+            font-size: 1.25rem;
         }
+
         p {
             text-align: left;
             padding-left: 1.5rem;
@@ -259,8 +275,6 @@ main {
             max-width: 280px;
             padding-bottom: 1.5rem;
         }
-
-   
     }
 
 }
@@ -360,47 +374,40 @@ main {
 
 /*------- FIGURE WITH LINK BELOW TOP-3 ----------*/
 #call-to-action {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
-    #call-to-action-img {
-        background: url('../images/hero-image-1.webp') no-repeat top center / cover;
-        background-position: 75%;
-        flex-grow: 1 250px;
-        position: relative;
-        height: 25rem;
-        width: 100%;
-        /*filter: blur(4px);
-        /*height: 90vw;
-        width: 90vw;
-        /*max-width: 40rem;
-        max-height: 40rem;
-        /*border-radius: 50%;*/
-        /* Makes the square image into a circle */
 
+    img {
+        object-fit: cover;
+        width: 100vw;
+        max-height: 200px;
     }
 
-    #call-to-action-gallery,
-    #call-to-action-join {
-        margin: 1rem 0;
+    a {
         cursor: pointer;
         text-transform: capitalize;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: #fafafa;
+        margin-top: 1rem;
 
-        span {
-            font-size: 1.5rem;
-            color: #fafafa;
-        }
-
-        :hover {
-            text-transform: uppercase;
-            scale: 1.2;
-            color: #ff9934;
-        }
     }
 
+    a:hover {
+        text-transform: uppercase;
+        scale: 1.1;
+        color: #e6455aec;
+    }
+
+
 }
+
 
 /* Hide the card checkbox */
 /* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
@@ -408,11 +415,13 @@ main {
 /* =========================================== */
 /* =============    GALLERY PAGE   =========== */
 
+#image-gallery {
+    margin-top: 0px;
+}
 
-#container {  
+#img-container {
     margin-top: 36px;
-    columns: 1;
-    background-color:#222831;
+    background-color: #222831;
 }
 
 .card-img-cats {
@@ -423,13 +432,14 @@ main {
     border: 1px solid #ebc1c1;
     break-inside: avoid;
 }
-.img-cats{
-    width: 100%; 
+
+.img-cats {
+    width: 100%;
     object-fit: cover;
     width: 100%;
 }
 
-.moreinfo{
+.moreinfo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -437,6 +447,7 @@ main {
     align-items: baseline;
     max-width: 280px;
 }
+
 .heading {
     margin: 5px 5px;
     font-size: 1.1rem;
@@ -455,69 +466,11 @@ main {
 
 
 
-
-
-
-
-/* -------------------------------------------------------------------*/
-/* ------------------------------ SIGNUP PAGE ------------------------*/
-
-
-#signup{
-    background: url("../images/signup-image.webp");
-    background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    flex-grow: 1;
-    
-}
-
-#signup-form{
-    color: #ffffff;
-    background-color: rgba(60,60,60,0.6);
-    padding: 30px;
-}
-
-#signup-form>h2{
-    color: #fafafa;
-    margin-bottom: 20px;
-}
-
-
-.text-input{
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 25px;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-}
-
-.radio-buttons{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-}
-
-.join-button{
-    margin-top: 20px;
-    border-radius: 2px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 100%;
-    color: #fafafa;
-    background-color: #454b1b;    
-}
-
 /* =========================================== */
 /* =========================================== */
-/* ---------- RESOURCES  --------------------- */
+/* ---------- VIDEO GALLERY  --------------------- */
 
+/*
 #videos-for-cats {
     position: fixed;
     text-align: left;
@@ -528,31 +481,95 @@ main {
     background-color: #212122;
     z-index: 99;
 }
-#container-videos {  
-    position: relative;
-    margin-top: 75px;
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    row-gap: 0.5rem;
-    columns: 1;
-    background-color:#222831;
+*/
+
+#video-gallery {
+    margin-top: 0px;
 }
+
+#container-videos {
+    position: relative;
+    /* 75px with h2 active*/
+    overflow: hidden;
+    background-color: #222831;
+}
+
 .card-videos {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
     border: 1px solid #ebc1c1;
 }
-.yb-video{
+
+.yb-video {
     aspect-ratio: 16/9;
-    min-width: 280px;
+    object-fit: cover;
+    width: 100%;
     height: auto;
-    width:100%
 }
 
+.moreinfo-videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 15px;
+    align-items: baseline;
+    max-width: 280px;
+}
+
+/* -------------------------------------------------------------------*/
+/* ------------------------------ SIGNUP PAGE ------------------------*/
+
+
+#signup {
+    background: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+
+}
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+.text-input {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 100%;
+    color: #fafafa;
+    background-color: #454b1b;
+}
 
 /* =========================================== */
 /* =========================================== */
@@ -561,62 +578,58 @@ main {
 /* THE DEFAULT RESPONSIVE DESIGN OPTIMIZED FOR MOBILES (<567px width) 
 
 /* Media query: large or landscape phones (567px and up) */
-@media screen and (min-width: 567px){
+@media screen and (min-width: 567px) {
 
-    #cover-text{
-        max-width: 75vw;
-    }
-    #additional-content{
-        columns: 2;
-    }
-    #call-to-action{
+
+    #additional-content {
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: baseline;
+        align-items: baseline;
+        justify-content: space-around;
     }
+
     #container {
         columns: 2;
-    }  
+    }
+
     #container-videos {
         columns: 2;
         column-gap: 0;
-    }    
+    }
 
 }
 
 
 
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px){
-    #cover-text{
-        max-width: 75vw;
-    }
-    #additional-content{
-        columns: 2;
-    }
+@media screen and (min-width: 768px) {
+
     #container {
         columns: 3;
-    }    
+    }
+
     #container-videos {
         columns: 3;
-    }  
+    }
 }
 
 
 /* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px){
-    #cover-text{
-        max-width: 75vw;
-    }
-    #additional-content{
+@media screen and (min-width: 992px) {
+
+    #additional-content {
         columns: 4;
     }
+
     #container {
         columns: 4;
-       
-    }  
+
+    }
+
     #container-videos {
         columns: 4;
         column-gap: 0;
-    }    
+    }
 
 }
