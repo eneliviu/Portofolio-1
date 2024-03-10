@@ -59,7 +59,6 @@ a {
 h1,
 h2,
 h3 {
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fafafa;
@@ -184,8 +183,6 @@ main {
     bottom: 0;
     width: 100%;
     font-size: 250%;
-
-
     a>i {
         color: #eeddcc;
         opacity: 0.6;
@@ -412,8 +409,8 @@ main {
 /* Hide the card checkbox */
 /* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
 
-/* =========================================== */
-/* =============    GALLERY PAGE   =========== */
+/* ============================================================== */
+/* =============    GALLERY PAGE  / REUSABLE ELEMENTS =========== */
 
 
 #image-gallery {
@@ -424,43 +421,84 @@ main {
     margin-top: 36px;
     background-color: #222831;
 }
+
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    border: 1px solid #ebc1c1;
+    border: 0.1rem solid #e1f1f2; 
     break-inside: avoid;
 }
+
 .img-cats {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
+
+
 .moreinfo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    column-gap: 10px;
-    align-items: baseline;
-    max-width: 280px;
+    width: 100%;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    margin: 0.5rem 0;
 }
-.heading {
-    margin: 5px 5px;
-    font-size: 1.1rem;
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+    align-items: center;
+    justify-items: baseline;
 }
-.btn {
-    width: 100px;
-    margin-bottom: 1rem;
-    background-color: #d31f1f;
-    color: #fafafa;
-    padding: 0.5rem 1.5rem;
-    border-radius: 20px;
+
+.info-heading {
     font-size: 1.2rem;
-    text-transform: capitalize;
+    text-align: center;
 }
 
+.info-number {
+    font-size: 1.1rem;
+    text-align: center;
+}
 
+.download-btn {
+    background-color: #d31f1f;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 150%;
+    text-decoration: none;
+    opacity: 0.7;
+    a {
+        color: #fafafa;
+    }
+}
+.download-btn:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+
+.like-btn {
+    background-color: #d31f1f;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 150%;
+    text-decoration: none;
+    opacity: 0.7;
+    a {
+        color: #fafafa;
+    }
+}
+.like-btn:hover{
+    scale: 1.2;
+    opacity: 1;
+}
 
 /* =========================================== */
 /* =========================================== */
@@ -497,14 +535,12 @@ main {
 /* -------------------------------------------------------------------*/
 /* ------------------------------ SIGNUP PAGE ------------------------*/
 
-
 #signup {
     background: url("../images/signup-image.webp");
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
-
 }
 
 #signup-form {
@@ -517,7 +553,6 @@ main {
     color: #fafafa;
     margin-bottom: 20px;
 }
-
 
 .text-input {
     padding-left: 5px;
@@ -550,6 +585,37 @@ main {
 }
 
 /* =========================================== */
+/* ---- CONFIRMATION PAGE -------------------- */
+
+.ok-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    margin-top: 180px;
+    margin-bottom: 0;
+    border: 1px solid #fafafa;
+    line-height: 4;
+    flex-basis: 280px;
+    flex-grow: 1;
+    i {
+        background-color: #454b1b;
+        color: #fafafa;
+    }
+    span{
+        font-size: 150%;
+        color: #fafafa;
+        background-color: rgba(163, 153, 153, 0.6);
+        padding: 1rem 1rem;
+        border-radius: 25px;
+    }
+
+}
+
+
+/* =========================================== */
 /* =========================================== */
 /* ---- MEDIA QURIES / RESPONSIVE DESIGN ---- */
 
@@ -568,12 +634,11 @@ main {
 
     #img-container {
         columns: 2;
+        column-gap: 1rem;
     }
 
     #video-container {
         columns: 2;
-        column-gap: 1rem;
-        row-gap: 1rem;
     }
 
 }
@@ -585,12 +650,12 @@ main {
 
     #img-container {
         columns: 3;
+        column-gap: 1rem;
     }
 
     #video-container {
         columns: 3;
         column-gap: 1rem;
-        row-gap: 1rem;
     }
 }
 
@@ -604,13 +669,13 @@ main {
 
     #img-container {
         columns: 4;
+        column-gap: 1rem;
 
     }
 
     #video-container {
         columns: 4;
-        column-gap: 1rem;
-        row-gap: 1rem;
+        column-gap: 1rem;;
     }
 
 }
