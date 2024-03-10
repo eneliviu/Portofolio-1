@@ -183,12 +183,12 @@ main {
     bottom: 0;
     width: 100%;
     font-size: 250%;
-    a>i {
+    a > i {
         color: #eeddcc;
         opacity: 0.6;
     }
 
-    a>i:hover {
+    a > i:hover {
         opacity: 1;
         scale: 1.25;
     }
@@ -591,25 +591,27 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
-    margin-top: 180px;
-    margin-bottom: 0;
+    margin: 0 auto;
+    max-width: 280px;
     border: 1px solid #fafafa;
     line-height: 4;
-    flex-basis: 280px;
-    flex-grow: 1;
+    padding: 2rem 1rem; 
+    
     i {
-        background-color: #454b1b;
+        background-color: #a8bd22;
         color: #fafafa;
     }
     span{
         font-size: 150%;
         color: #fafafa;
-        background-color: rgba(163, 153, 153, 0.6);
+        background-color: rgba(17, 139, 68, 0.548);
         padding: 1rem 1rem;
         border-radius: 25px;
+    }
+    div {
+        background-color: rgba(128, 138, 130, 0.6);
     }
 
 }
