@@ -37,7 +37,3 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
-
-
-
- <a href="https://www.freepik.com/icons/cat">Icon by Flat Icons</a>

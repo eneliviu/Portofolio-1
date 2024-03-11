@@ -150,7 +150,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top:56px;
+    margin-top: 56px;
     flex: 1 0 auto;
     background-color: #222831;
 }
@@ -196,20 +196,21 @@ main {
     width: 100%;
     /* USE IMAGE INSTEAD FOR ARIA ISSUES */
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
- 
+
     #cover-text {
         display: inline-block;
         position: absolute;
         bottom: 2rem;
-        width:75%;
+        width: 75%;
         padding-left: 0.5rem;
         min-height: 6rem;
         background-color: rgba(219, 238, 208, 0.65);
         font-size: 200%;
+
         h2,
         h3 {
             padding: 0.5rem 0.5rem;
-            color: #0e0d0d;   
+            color: #0e0d0d;
         }
     }
 
@@ -222,12 +223,14 @@ main {
 
 #why-cats {
     margin: 2rem 0.5rem;
-    
+
     text-align: center;
-    h2, h3 {
+
+    h2,
+    h3 {
         color: #eba0a0;
         font-size: 300%;
-        padding: 0.5rem 0; 
+        padding: 0.5rem 0;
     }
 
 }
@@ -245,6 +248,7 @@ main {
         padding: 0 1rem;
         min-height: 300px;
         min-width: 280px;
+
         h3 {
             color: #eba0a0;
             padding-left: 1rem;
@@ -254,16 +258,19 @@ main {
                 color: rgb(238, 53, 53)
             }
         }
+
         hr {
             border-top: 1px solid #fafafa;
             margin: 0.5rem 0.5rem;
 
         }
+
         ul {
             text-align: left;
             padding-left: 2rem;
             font-size: 200%;
             max-width: 280px;
+
             li {
                 line-height: 1;
                 padding: 0.5rem 0;
@@ -380,17 +387,18 @@ main {
     margin-bottom: 2rem;
     max-width: 280px;
     height: auto;
-    
-    .visit-us{
+
+    .visit-us {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        img {
+        iframe {
             object-fit: cover;
-            width: 100vw;
-            max-height: 200px;
             border-radius: 50%;
+            width: 300px;
+            height: auto;
+            
         }
+
         a {
             cursor: pointer;
             text-transform: capitalize;
@@ -398,9 +406,9 @@ main {
             line-height: 2;
             color: #fafafa;
             margin-top: 1rem;
-    
+
         }
-    
+
         a:hover {
             text-transform: uppercase;
             scale: 1.1;
@@ -410,8 +418,8 @@ main {
         .aoshima-google-map {
             padding-bottom: 2rem;
         }
-        
-        
+
+
     }
 
 }
@@ -460,22 +468,29 @@ main {
     height: auto;
     justify-content: space-evenly;
     text-align: center;
+    align-items: center;
     margin: 0.5rem 0;
+
+    .info-box {
+        display: flex;
+        flex-direction: column;
+        justify-items: baseline;
+        h4 {
+            font-size: 1.3rem;
+            color: #fafafa;
+        }
+    }
+    
+    .info-heading {
+        font-size: 1.2rem;
+    }
+    
+    .info-number {
+        font-size: 1.1rem;
+    }
 }
 
-.info-box {
-    display: flex;
-    flex-direction: column;
-    justify-items: baseline;
-}
 
-.info-heading {
-    font-size: 1.2rem;
-}
-
-.info-number {
-    font-size: 1.1rem;
-}
 
 .download-btn {
     background-color: #d31f1f;
