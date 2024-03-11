@@ -192,24 +192,24 @@ main {
 /* Hero section */
 #hero {
     position: relative;
-    height: 45rem;
+    height: 35rem;
     width: 100%;
     /* USE IMAGE INSTEAD FOR ARIA ISSUES */
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
-
+ 
     #cover-text {
-        position: relative;
-        top: 25rem;
-        width: 75%;
-        padding-left: 1rem;
+        display: inline-block;
+        position: absolute;
+        bottom: 2rem;
+        width:75%;
+        padding-left: 0.5rem;
+        min-height: 6rem;
         background-color: rgba(219, 238, 208, 0.65);
-
+        font-size: 200%;
         h2,
         h3 {
-            padding: 0.5rem 1rem;
-            color: #0e0d0d;
-            font-size: 200%;
-
+            padding: 0.5rem 0.5rem;
+            color: #0e0d0d;   
         }
     }
 
@@ -222,10 +222,12 @@ main {
 
 #why-cats {
     margin: 2rem 0.5rem;
+    
     text-align: center;
     h2, h3 {
         color: #eba0a0;
         font-size: 300%;
+        padding: 0.5rem 0; 
     }
 
 }
@@ -270,6 +272,9 @@ main {
         }
     }
 }
+
+
+
 
 /* ----------- */
 /* TOP-3 BREEDS */
@@ -365,38 +370,49 @@ main {
 
 
 /*------- FIGURE WITH LINK BELOW TOP-3 ----------*/
+
 #call-to-action {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-items: center;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    max-width: 280px;
+    height: auto;
+    
+    .visit-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            object-fit: cover;
+            width: 100vw;
+            max-height: 200px;
+            border-radius: 50%;
+        }
+        a {
+            cursor: pointer;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            line-height: 2;
+            color: #fafafa;
+            margin-top: 1rem;
+    
+        }
+    
+        a:hover {
+            text-transform: uppercase;
+            scale: 1.1;
+            color: #e6455aec;
+        }
 
-
-    img {
-        object-fit: cover;
-        width: 100vw;
-        max-height: 200px;
+        .aoshima-google-map {
+            padding-bottom: 2rem;
+        }
+        
+        
     }
-
-    a {
-        cursor: pointer;
-        text-transform: capitalize;
-        font-size: 1.5rem;
-        line-height: 2;
-        color: #fafafa;
-        margin-top: 1rem;
-
-    }
-
-    a:hover {
-        text-transform: uppercase;
-        scale: 1.1;
-        color: #e6455aec;
-    }
-
 
 }
 
@@ -625,7 +641,8 @@ main {
     }
 
     #cover-text {
-        max-width: 45rem;
+        width: 45%;
+        font-size: 150%;
     }
 
 }
