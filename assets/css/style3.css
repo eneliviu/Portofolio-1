@@ -19,12 +19,6 @@
     /* reset the bullet-points list to none */
 }
 
-button {
-    border: initial;
-    background: initial;
-    font: inherit;
-}
-
 /* Generic project styles */
 
 html {
@@ -42,11 +36,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: #fafafa;
     min-height: 100vh;
-    /*Galaxy Fold width as minimum default */
-    /* MOBILE DEFAULT */
-    min-width: 280px;
     margin-bottom: 40px;
-    /* Prevent the footer (30px height) to cover the main content */
 }
 
 /* reset the color and remove the underline for the links in anchor tags*/
@@ -89,12 +79,12 @@ h3 {
     #logo {
         color: #1d1c1b;
         font-size: 3rem;
-        
+
     }
 
     /* ----- NAVBAR / MENU AS DIV INSIDE HEADER-------*/
 
-   /* #hamburger-menu {} */
+    /* #hamburger-menu {} */
 
 
     /* Hide the checkbox */
@@ -110,7 +100,7 @@ h3 {
         width: 100%;
         display: none;
         top: 100%;
-       
+
         /* Style Navigation items */
         .menu-item {
             display: flex;
@@ -118,14 +108,15 @@ h3 {
             margin-left: 1rem;
             padding: 0.5rem;
         }
-     
-        a {            
+
+        a {
             text-transform: capitalize;
             letter-spacing: 2px;
             font-size: 1.75rem;
             font-weight: 600;
             color: #1d1c1b;
         }
+
         /* Enlarge the nav-item at hover */
         a:hover {
             scale: 1.25;
@@ -159,11 +150,9 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 56px;
+    margin-top:56px;
     flex: 1 0 auto;
     background-color: #222831;
-    min-width: 280px;
-    overflow-y: scroll;
 }
 
 /* --------------------------------------------------------------------*/
@@ -205,19 +194,22 @@ main {
     position: relative;
     height: 45rem;
     width: 100%;
+    /* USE IMAGE INSTEAD FOR ARIA ISSUES */
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
 
     #cover-text {
         position: relative;
         top: 25rem;
-        width: 95%;
-        padding-right: 1rem;
-        background-color: rgba(255, 170, 165, 0.6);
+        width: 75%;
+        padding-left: 1rem;
+        background-color: rgba(219, 238, 208, 0.65);
 
         h2,
         h3 {
             padding: 0.5rem 1rem;
             color: #0e0d0d;
+            font-size: 200%;
+
         }
     }
 
@@ -227,17 +219,15 @@ main {
 /* ---------------------------------------- */
 
 /* ADDITIONAL CONTENT SECTION */
-#why-cats {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    width: 100%;
-    min-width: 280px;
 
-    h2 {
+#why-cats {
+    margin: 2rem 0.5rem;
+    text-align: center;
+    h2, h3 {
         color: #eba0a0;
-        font-size: 250%;
+        font-size: 300%;
     }
+
 }
 
 #additional-content {
@@ -247,32 +237,38 @@ main {
     width: 100%;
     padding-top: 1.5rem;
 
-    hr {
-        border-top: 1px solid #fafafa;
-        margin: 0.5rem 0.5rem;
-        max-width: 280px;
-    }
-
     .reason {
         display: flex;
         flex-direction: column;
         padding: 0 1rem;
-
+        min-height: 300px;
+        min-width: 280px;
         h3 {
             color: #eba0a0;
             padding-left: 1rem;
-            font-size: 1.25rem;
-        }
+            font-size: 200%;
 
-        p {
+            i {
+                color: rgb(238, 53, 53)
+            }
+        }
+        hr {
+            border-top: 1px solid #fafafa;
+            margin: 0.5rem 0.5rem;
+
+        }
+        ul {
             text-align: left;
-            padding-left: 1.5rem;
-            font-size: 1.5rem;
+            padding-left: 2rem;
+            font-size: 200%;
             max-width: 280px;
-            padding-bottom: 1.5rem;
+            li {
+                line-height: 1;
+                padding: 0.5rem 0;
+                list-style-type: disc;
+            }
         }
     }
-
 }
 
 /* ----------- */
@@ -425,7 +421,8 @@ main {
     align-items: center;
     border: 0.1rem solid #e1f1f2;
     break-inside: avoid;
-    margin-top: 0 ;
+    margin-top: 0;
+
     .yb-video {
         aspect-ratio: 16/9;
         object-fit: contain;
@@ -446,26 +443,22 @@ main {
     width: 100%;
     height: auto;
     justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
+    text-align: center;
     margin: 0.5rem 0;
 }
 
 .info-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-items: baseline;
 }
 
 .info-heading {
     font-size: 1.2rem;
-    text-align: center;
 }
 
 .info-number {
     font-size: 1.1rem;
-    text-align: center;
 }
 
 .download-btn {
@@ -474,11 +467,12 @@ main {
     height: 3rem;
     border-radius: 50%;
     font-size: 150%;
-    text-decoration: none;
     opacity: 0.7;
 
-    a {
+    a>i {
         color: #fafafa;
+        text-align: center;
+        margin-top: 0.75rem;
     }
 }
 
@@ -617,19 +611,21 @@ main {
 /* Media query: large or landscape phones (567px and up) */
 @media screen and (min-width: 567px) {
 
-
-
     #additional-content {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: baseline;
-        align-items: baseline;
+
         justify-content: space-around;
+
     }
 
-    #img-container, 
+    #img-container,
     #video-container {
         columns: 2;
+    }
+
+    #cover-text {
+        max-width: 45rem;
     }
 
 }
@@ -656,7 +652,7 @@ main {
         font-size: 1.75rem;
         align-items: center;
 
-        div > a {
+        div>a {
             color: #1d1c1b;
         }
 
@@ -668,7 +664,9 @@ main {
     }
 
 
-
+    #cover-text {
+        max-width: 60rem;
+    }
 }
 
 
@@ -679,7 +677,7 @@ main {
         columns: 4;
     }
 
-    #img-container, 
+    #img-container,
     #video-container {
         columns: 4;
     }
