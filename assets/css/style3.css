@@ -31,12 +31,11 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     background-color: #222831;
     font-family: 'Inter', sans-serif;
+    background-color: #222831;
     color: #fafafa;
     min-height: 100vh;
-    margin-bottom: 40px;
 }
 
 /* reset the color and remove the underline for the links in anchor tags*/
@@ -149,10 +148,8 @@ h3 {
 main {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     margin-top: 56px;
     flex: 1 0 auto;
-    background-color: #222831;
 }
 
 /* --------------------------------------------------------------------*/
@@ -160,8 +157,7 @@ main {
 /* --------------------------------------------------------------------*/
 
 #social-networks {
-    position: fixed;
-    /* Fixed relative to the main footer div*/
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -173,6 +169,7 @@ main {
     bottom: 0;
     width: 100%;
     font-size: 250%;
+
 
     a>i {
         color: #eeddcc;
@@ -547,77 +544,82 @@ main {
 /* ------------------------------ SIGNUP PAGE ------------------------*/
 
 #contact-us {
-    display: flex;
-    flex-direction: column;
-    background: url("../images/signup-image.webp") no-repeat center center/cover;
-    width: 75%;
+    background: url("../images/signup-image.webp");
+    background-size: cover;
+    margin: 5% 0;
 }
 
 #signup {
-    padding-top: 10%;
-
-}
-
-#signup-form {
     background-color: rgba(60, 60, 60, 0.6);
-    padding: 3rem;
-    font-size: 120%;
-    h2 {
-        margin-bottom: 2rem;
+    margin: 5%;
+
+    #signup-form {
+        h2 {
+            padding-top: 1rem;
+            text-align: center;
+        }
+        h3 {
+            padding-top: 1.5rem;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        #email-example {
+            #email-address {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 80%;
+            }
+        }
     }
 
-    h3 {
-        margin-bottom: 0.5rem;
+    #upload-form {
+        padding-bottom: 1rem;
+
+        h3 {
+            padding-top: 2rem;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        h4 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 80%;
+        }
+
+        .submit-btn{
+            margin-top: 1rem;
+            background-color: #202020;
+            color: #fafafa;
+        }
     }
-   
-}
 
-
-.text-input {
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 25px;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-}
-.radio-buttons {
-    line-height: 2;
-}
-
-
-
-.submit-btn {
-    margin-top: 1.5rem;
-    border-radius: 2px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 15px;
-    padding-bottom: 1.5rem;
-    font-size: 150%;
-    color: #fafafa;
-    background-color: #454b1b;
-}
-
-#upload-images {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    background-color: rgba(60, 60, 60, 0.6);
+    .text-input {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        height: 2.5rem;
+        border: 1px solid #fafafa;
+        border-radius: 0.2rem;
+    }
 
 }
+
 
 /* =========================================== */
+/* =========================================== */
 /* ---- CONFIRMATION PAGE -------------------- */
+/* =========================================== */
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .ok-card {
     max-width: 280px;

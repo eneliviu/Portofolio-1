@@ -57,13 +57,12 @@
 
     <main>
 
-
         <div id="contact-us">
 
             <section id="signup">
                 <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
-                    <h2> 
-                        <i class="fa-solid fa-heartbeat"> </i> 
+                    <h2>
+                        <i class="fa-solid fa-heartbeat"> </i>
                         Let's get you signed up!
                     </h2>
 
@@ -75,14 +74,17 @@
                     <input type="text" name="last_name" id="last_name" class="text-input" required>
                     <br>
 
-                    <label for="email_address">Email Address</label>
-                    <input type="email" name="email_address" id="email_address" class="text-input" required>
+                    <div id="email-example">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="email-address" id="email-address" class="text-input" required>
+                        <p>(expamle@domain.com)</p>
+                    </div>
                     <br>
 
                     <!--
                   <p class="hidden-heading">Running Preference:</p>
                   -->
-                    <h3> How Did You Hear About Us?</h3>
+                    <h3> How did you hear about us?</h3>
                     <div class="radio-buttons">
                         <div>
                             <input type="radio" name="search-engine-option" id="search-engine" value="search-engine"
@@ -108,31 +110,31 @@
 
                     </div>
                 </form>
-            </section>
 
-            <section id="upload">
+
+
                 <form id="upload-form" method="POST" action="https://formdump.codeinstitute.net">
-                    <h3> Upload your images !</h3>
+                    <h3>
+                        Upload your images!
+                    </h3>
                     <br>
-                    <div id="upload-images">
-                   
 
-                        <label for="image-file">
-                            Choose media file (.png, .gif, .webp, .jpeg, .mp4 ) - max. 2MB
-                        </label>
-                        <br>
-                        <input type="file" id="image-file" name="image-file"
-                            accept="image/png, image/gif, image/webp, image/jpeg, video/mp4">
+                    <label for="image-file" >Select media file:</label>
+                    <input type="file" id="image-file" name="image-file" class="text-input"
+                        accept="image/png, image/gif, image/webp, image/jpeg, video/mp4">
+                    <p>(.png, .gif, .webp, .jpeg, .mp4 ) - max. 2MB</p>
+                    <br>
 
-                    </div>
+                    <label for="content">File description</label>
+                    <input class="text-input" id="content" name="media-description" type="text">
+                    <span>(max 25 characters)</p>
+
+                    <label for="url">URL</label>
+                    <input class="text-input" id="url" name="url" type="url">
+
+                    <button type="submit" class="submit-btn">Submit!</button>
 
                 </form>
-            </section>
-
-            <section class="submit">
-                <button type="submit" class="submit-btn">
-                    Submit!
-                </button>
             </section>
 
         </div>
@@ -145,7 +147,7 @@
 
 
 
-    <!--Footer-->
+
     <footer>
         <div id="social-networks">
 
@@ -180,7 +182,6 @@
         </div>
 
     </footer>
-    <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/498c29f243.js" crossorigin="anonymous"></script>
 
 
