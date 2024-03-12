@@ -363,13 +363,9 @@ main {
 
 }
 
-/* .card */
-
-
 #card-toggle-breeds {
     display: none;
 }
-
 
 #card-text-breeds {
     display: none;
@@ -391,12 +387,13 @@ main {
     .visit-us {
         display: flex;
         flex-direction: column;
+
         iframe {
             object-fit: cover;
             border-radius: 50%;
             width: 300px;
             height: auto;
-            
+
         }
 
         a {
@@ -475,16 +472,17 @@ main {
         display: flex;
         flex-direction: column;
         justify-items: baseline;
+
         h4 {
             font-size: 1.3rem;
             color: #fafafa;
         }
     }
-    
+
     .info-heading {
         font-size: 1.2rem;
     }
-    
+
     .info-number {
         font-size: 1.1rem;
     }
@@ -548,24 +546,32 @@ main {
 /* -------------------------------------------------------------------*/
 /* ------------------------------ SIGNUP PAGE ------------------------*/
 
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    background: url("../images/signup-image.webp") no-repeat center center/cover;
+    width: 75%;
+}
+
 #signup {
-    background: url("../images/signup-image.webp");
-    background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    flex-grow: 1;
+    padding-top: 10%;
+
 }
 
 #signup-form {
-    color: #ffffff;
     background-color: rgba(60, 60, 60, 0.6);
-    padding: 30px;
+    padding: 3rem;
+    font-size: 120%;
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+   
 }
 
-#signup-form>h2 {
-    color: #fafafa;
-    margin-bottom: 20px;
-}
 
 .text-input {
     padding-left: 5px;
@@ -577,24 +583,30 @@ main {
     border: 1px solid #fafafa;
     border-radius: 2px;
 }
-
 .radio-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
+    line-height: 2;
 }
 
-.join-button {
-    margin-top: 20px;
+
+
+.submit-btn {
+    margin-top: 1.5rem;
     border-radius: 2px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 100%;
+    padding-bottom: 1.5rem;
+    font-size: 150%;
     color: #fafafa;
     background-color: #454b1b;
+}
+
+#upload-images {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(60, 60, 60, 0.6);
+
 }
 
 /* =========================================== */
