@@ -1,16 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..600&display=swap');
 
-/* Pet Shop Color Palette
-    #ff9934	(255,153,52)
-	#f8f246	(248,242,70)
-    #8c5826	(140,88,38)
-    #e1f1f2	(225,241,242)
-	#2cbbc3	(44,187,195)
-*/
-/* https://htmlcolorcodes.com for colors
-
-/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
@@ -542,89 +532,80 @@ main {
 
 #contact-us {
     background-color: rgba(60, 60, 60, 0.6);
-    /*background: url("../images/signup-image.webp");
-    background-size: cover;
-    background-position: 75%;*/
     flex: 1;
-}   
+ 
 
-/*
-#signup,
-#upload {
-    padding: 0.5rem 0;
-    text-align: left;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-*/
-
-
-#signup-form {
-    display: flex;
-    flex-direction: column;
-    
-    height: 100vw;
-    text-align: left;
-
-    
-    h2 {
-        padding-top: 1rem;
-        text-align: center;
-    }
-
-    h3 {
-        padding-top: 1.5rem;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
+    #signup-form {
+        display: flex;
+        flex-direction: column;
+        font-size: 130%;
         text-align: left;
-        text-transform: capitalize;
-    }
 
-    .radio-button {
-        padding-left: 1rem;
-        line-height: 1.5;
-    }
-
-    .how-to-example {
-        padding-left: 1rem;
-        width: 95%;
-
-        #email-address,
-        #image-file,
-        #media-content,
-        #url,
-        #first-name,
-        #last-name {
-            height: 2rem;
-            padding-bottom: 0;
-            margin-bottom: 0;
+        h2 {
+            padding-top: 1rem;
+            text-align: center;
+            padding-bottom: 1rem;
         }
 
-        p {
-            padding-left: 0.5rem;
-            font-size: 80%;
+        h3 {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            text-align: left;
+            text-transform: capitalize;
+        }
+
+        .radio-button {
+            padding-left: 1rem;
+            line-height: 1.5;
+        }
+
+        .how-to-example {
+            padding-left: 1rem;
+            width: 95%;
+            #email-address,
+            #image-file,
+            #media-content,
+            #url,
+            #first-name,
+            #last-name {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            p {
+                padding-left: 0.5rem;
+                font-size: 90%;
+            }
+        }
+
+        .text-input {
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            border: 1px solid #fafafa;
+            border-radius: 0.2rem;
+        }
+
+        .submit-btn {
+            text-align: center;
+            #submit {
+                border-radius: 0.5rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                font-size: 130%;
+                color: #fafafa;
+                background-color: #454b1b;
+            }
+            #submit:hover{
+                background-color: #fafafa;
+                color: #454b1b;
+            }
         }
     }
-
-    .text-input {
-        margin-top: 0.5rem;
-        margin-bottom: 1.5rem;
-        width: 100%;
-        border: 1px solid #fafafa;
-        border-radius: 0.2rem;
-    }
-
-
-
 }
-
-
-.submit-btn {
-    align-self: center;
-    margin-bottom: 1.5rem;
-}
-
 
 
 
@@ -693,6 +674,12 @@ main {
         font-size: 150%;
     }
 
+    #signup-form {
+        max-width: 554px;
+        position: relative;
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -728,10 +715,12 @@ main {
         columns: 3;
     }
 
-
     #cover-text {
         max-width: 60rem;
     }
+
+
+
 }
 
 

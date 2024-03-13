@@ -59,100 +59,92 @@
 
         <div id="contact-us">
 
-
             <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
 
-               
-                    <h2>
-                        <i class="fa-solid fa-paw"></i>
-                        Let's get you signed up!
-                    </h2>
+                <h2>
+                    <i class="fa-solid fa-paw"></i>
+                    Let's get you signed up!
+                </h2>
 
-                    <div class="how-to-example">
-                        <label for="first-name">First Name</label>
-                        <input class="text-input" type="text" name="first-name" id="first-name" required>
-                    </div>
-                    <br>
+                <div class="how-to-example">
+                    <label for="first-name">First Name</label>
+                    <input class="text-input" type="text" name="first-name" id="first-name" required>
+                </div>
+                <br>
 
-                    <div class="how-to-example">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last_name" id="last-name" class="text-input" required>
-                    </div>
-                    <br>
+                <div class="how-to-example">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last_name" id="last-name" class="text-input" required>
+                </div>
+                <br>
 
-                    <div class="how-to-example">
-                        <label for="email-address">Email Address</label>
-                        <input type="email" name="email-address" id="email-address" class="text-input" required>
-                        <p>(exemple@domain.com)</p>
-                    </div>
-                    <br>
+                <div class="how-to-example">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="email-address" id="email-address" title="must be a valid email address"
+                        class="text-input" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required>
+                    <p>(exemple@domain.com)</p>
+                </div>
+                <br>
 
-                    <!--
-                  <p class="hidden-heading">Running Preference:</p>
-                  -->
-                    <h3>
-                        How did you find us?
-                    </h3>
+                <h3>
+                    How did you find us?
+                </h3>
 
-                    <div class="radio-button">
-                        <input type="radio" name="search-engine-option" id="search-engine" value="search-engine"
-                            required checked>
-                        <label for="search-engine">Search engine (Google, Yahoo, etc.)</label>
+                <div class="radio-button">
+                    <div>
+                    <input type="radio" name="search-option" id="search-engine" value="search-engine" required checked>
+                    <label for="search-engine">Search engine (Google, Yahoo, etc.)</label>
                     </div>
 
-                    <div class="radio-button">
-                        <input type="radio" id="social-media" name="social-media-option" value="social-media" required>
-                        <label for="social-media">Social media</label>
-                    </div>
+                    <div>
+                    <input type="radio" id="social-media" name="search-option" value="social-media" required>
+                    <label for="social-media">Social media</label>
+                </div>
 
-                    <div class="radio-button">
-                        <input type="radio" id="other" name="other-option" value="other" required>
-                        <label for="other">Other</label>
-                    </div>
-                    <br>
+                <div>
+                    <input type="radio" id="other" name="search-option" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+                
+                </div>
+                <br>
 
-                    <h3>
-                        Upload your images!
-                    </h3>
-                    <br>
+                <h3>
+                    Upload your images!
+                </h3>
 
-                    <div class="how-to-example">
-                        <label for="image-file">Select media file:</label>
-                        <input class="text-input" id="image-file" name="image-file" type="file"
-                            accept="image/png, image/gif, image/webp, image/jpeg, video/mp4">
-                        <p>(.png, .gif, .webp, .jpeg, .mp4 ) - max. 4MB</p>
-                    </div>
-                    <br>
+                <div class="how-to-example">
+                    <label for="image-file">Select media file:</label>
+                    <input class="text-input" id="image-file" name="image-file" type="file"
+                        accept="image/png, image/gif, image/webp, image/jpeg, video/mp4">
+                    <p>(.png, .gif, .webp, .jpeg, .mp4 ) - max. 4MB</p>
+                </div>
+                <br>
 
-                    <div class="how-to-example">
-                        <label for="media-content">Description/key-words:</label>
-                        <input class="text-input" id="media-content" name="media-description" type="text">
-                        <span>(max 25 characters)</p>
-                    </div>
-                    <br>
+                <div class="how-to-example">
+                    <label for="media-content">Description/key-words:</label>
+                    <input type="text" class="text-input" id="media-content" name="media-description" 
+                        maxlength="25">
+                    <p>(max 25 characters)</p>
+                </div>
+                <br>
 
-                    <div class="how-to-example">
-                        <label for="url">URL:</label>
-                        <input class="text-input" id="url" name="url" type="url" pattern="https://.*">
-                        <p>(https://.*)</p>
-                    </div>
-                    <br>
+                <div class="how-to-example">
+                    <label for="url">URL:</label>
+                    <input class="text-input" id="url" name="url" type="url" pattern="https://.*">
+                    <p>(https://.*)</p>
+                </div>
+                <br>
 
-                    <div class="submit-btn">
-                        <button type="submit" id="submit">
-                            Submit
-                        </button>
-                    </div>
+                <div class="submit-btn">
+                    <button type="submit" id="submit">
+                        Submit
+                    </button>
+                </div>
 
-
-             
-            
             </form>
 
         </div>
-
-
-
 
     </main>
 
