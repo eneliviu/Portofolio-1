@@ -59,83 +59,95 @@
 
         <div id="contact-us">
 
-            <section id="signup">
-                <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+
+               
                     <h2>
-                        <i class="fa-solid fa-heartbeat"> </i>
+                        <i class="fa-solid fa-paw"></i>
                         Let's get you signed up!
                     </h2>
 
-                    <label for="first_name">First Name</label>
-                    <input class="text-input" type="text" name="first_name" id="first_name" required>
+                    <div class="how-to-example">
+                        <label for="first-name">First Name</label>
+                        <input class="text-input" type="text" name="first-name" id="first-name" required>
+                    </div>
                     <br>
 
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name" id="last_name" class="text-input" required>
+                    <div class="how-to-example">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last_name" id="last-name" class="text-input" required>
+                    </div>
                     <br>
 
-                    <div id="email-example">
+                    <div class="how-to-example">
                         <label for="email-address">Email Address</label>
                         <input type="email" name="email-address" id="email-address" class="text-input" required>
-                        <p>(expamle@domain.com)</p>
+                        <p>(exemple@domain.com)</p>
                     </div>
                     <br>
 
                     <!--
                   <p class="hidden-heading">Running Preference:</p>
                   -->
-                    <h3> How did you hear about us?</h3>
-                    <div class="radio-buttons">
-                        <div>
-                            <input type="radio" name="search-engine-option" id="search-engine" value="search-engine"
-                                required checked>
-                            <label for="search-engine">Search engine (Google, Yahoo, etc.)</label>
-                        </div>
+                    <h3>
+                        How did you find us?
+                    </h3>
 
-                        <div>
-                            <input type="radio" id="friend" name="friend-option" value="friend" required>
-                            <label for="friend">Friend or colleague</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" id="social-media" name="social-media-option" value="social-media"
-                                required>
-                            <label for="social-media">Social media</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" id="other" name="other-option" value="other" required>
-                            <label for="other">Other</label>
-                        </div>
-
+                    <div class="radio-button">
+                        <input type="radio" name="search-engine-option" id="search-engine" value="search-engine"
+                            required checked>
+                        <label for="search-engine">Search engine (Google, Yahoo, etc.)</label>
                     </div>
-                </form>
 
+                    <div class="radio-button">
+                        <input type="radio" id="social-media" name="social-media-option" value="social-media" required>
+                        <label for="social-media">Social media</label>
+                    </div>
 
+                    <div class="radio-button">
+                        <input type="radio" id="other" name="other-option" value="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                    <br>
 
-                <form id="upload-form" method="POST" action="https://formdump.codeinstitute.net">
                     <h3>
                         Upload your images!
                     </h3>
                     <br>
 
-                    <label for="image-file" >Select media file:</label>
-                    <input type="file" id="image-file" name="image-file" class="text-input"
-                        accept="image/png, image/gif, image/webp, image/jpeg, video/mp4">
-                    <p>(.png, .gif, .webp, .jpeg, .mp4 ) - max. 2MB</p>
+                    <div class="how-to-example">
+                        <label for="image-file">Select media file:</label>
+                        <input class="text-input" id="image-file" name="image-file" type="file"
+                            accept="image/png, image/gif, image/webp, image/jpeg, video/mp4">
+                        <p>(.png, .gif, .webp, .jpeg, .mp4 ) - max. 4MB</p>
+                    </div>
                     <br>
 
-                    <label for="content">File description</label>
-                    <input class="text-input" id="content" name="media-description" type="text">
-                    <span>(max 25 characters)</p>
+                    <div class="how-to-example">
+                        <label for="media-content">Description/key-words:</label>
+                        <input class="text-input" id="media-content" name="media-description" type="text">
+                        <span>(max 25 characters)</p>
+                    </div>
+                    <br>
 
-                    <label for="url">URL</label>
-                    <input class="text-input" id="url" name="url" type="url">
+                    <div class="how-to-example">
+                        <label for="url">URL:</label>
+                        <input class="text-input" id="url" name="url" type="url" pattern="https://.*">
+                        <p>(https://.*)</p>
+                    </div>
+                    <br>
 
-                    <button type="submit" class="submit-btn">Submit!</button>
+                    <div class="submit-btn">
+                        <button type="submit" id="submit">
+                            Submit
+                        </button>
+                    </div>
 
-                </form>
-            </section>
+
+             
+            
+            </form>
 
         </div>
 
@@ -143,9 +155,6 @@
 
 
     </main>
-
-
-
 
 
     <footer>

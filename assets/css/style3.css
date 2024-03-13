@@ -163,13 +163,12 @@ main {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    background-color: #393E46;
-    height: 4rem;
     margin-top: auto;
     bottom: 0;
+    height: 4rem;
     width: 100%;
     font-size: 250%;
-
+    background-color: #393E46;
 
     a>i {
         color: #eeddcc;
@@ -485,8 +484,6 @@ main {
     }
 }
 
-
-
 .download-btn {
     background-color: #d31f1f;
     width: 3rem;
@@ -544,74 +541,96 @@ main {
 /* ------------------------------ SIGNUP PAGE ------------------------*/
 
 #contact-us {
-    background: url("../images/signup-image.webp");
-    background-size: cover;
-    margin: 5% 0;
-}
-
-#signup {
     background-color: rgba(60, 60, 60, 0.6);
-    margin: 5%;
+    /*background: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;*/
+    flex: 1;
+}   
 
-    #signup-form {
-        h2 {
-            padding-top: 1rem;
-            text-align: center;
-        }
-        h3 {
-            padding-top: 1.5rem;
-            text-align: center;
-            text-transform: capitalize;
-        }
+/*
+#signup,
+#upload {
+    padding: 0.5rem 0;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+*/
 
-        #email-example {
-            #email-address {
-                padding-bottom: 0;
-                margin-bottom: 0;
-            }
-            p {
-                font-size: 80%;
-            }
-        }
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vw;
+    text-align: left;
+
+    
+    h2 {
+        padding-top: 1rem;
+        text-align: center;
     }
 
-    #upload-form {
+    h3 {
+        padding-top: 1.5rem;
+        padding-left: 1rem;
         padding-bottom: 1rem;
+        text-align: left;
+        text-transform: capitalize;
+    }
 
-        h3 {
-            padding-top: 2rem;
-            text-align: center;
-            text-transform: capitalize;
-        }
+    .radio-button {
+        padding-left: 1rem;
+        line-height: 1.5;
+    }
 
-        h4 {
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
+    .how-to-example {
+        padding-left: 1rem;
+        width: 95%;
+
+        #email-address,
+        #image-file,
+        #media-content,
+        #url,
+        #first-name,
+        #last-name {
+            height: 2rem;
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
 
         p {
+            padding-left: 0.5rem;
             font-size: 80%;
-        }
-
-        .submit-btn{
-            margin-top: 1rem;
-            background-color: #202020;
-            color: #fafafa;
         }
     }
 
     .text-input {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
         margin-top: 0.5rem;
         margin-bottom: 1.5rem;
         width: 100%;
-        height: 2.5rem;
         border: 1px solid #fafafa;
         border-radius: 0.2rem;
     }
 
+
+
 }
+
+
+.submit-btn {
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
 
 
 /* =========================================== */
