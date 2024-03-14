@@ -9,8 +9,28 @@
     /* reset the bullet-points list to none */
 }
 
-/* Generic project styles */
 
+
+:root {
+    --bgk-col-body: #222831;
+    --bkg-col-header: #393E46;
+    --bkg-col-header: rgba(219, 238, 208, 0.65);
+    --font-col-header: #0e0d0d;
+    --font-col-logo: #1d1c1b;
+    --font-col: #fafafa;
+    --bgk-col-nav: #393E46;
+    --favi-hearts-col: rgb(238, 53, 53);
+    --card-border-col:#e1f1f2;
+    --h-col-light: #eba0a0;
+    --bgk-col-likes: rgba(180, 199, 196, 0.4)
+    --favi-likes-col: #be370d;
+    --bkg-col-contact: rgba(60, 60, 60, 0.6);
+    --contact-border-col: #e94545;
+    --submit-btn-col: #454b1b;
+  }
+
+
+/* Generic project styles */
 html {
     /* Convert the default value of root font-size from 16 to 10 px 
         to use base 10 for calculations */
@@ -20,10 +40,9 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #222831;
-    font-family: 'Inter', sans-serif;
-    background-color: #222831;
-    color: #fafafa;
+    background-color: var(--bgk-col-body);
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-col);
     min-height: 100vh;
 }
 
@@ -64,9 +83,9 @@ h3 {
 
     /* Always on top */
     #logo {
-        color: #1d1c1b;
+        color: var(--font-col-logo);
         font-size: 3rem;
-
+        font-family: 'Lobster', sans-serif;
     }
 
     /* ----- NAVBAR / MENU AS DIV INSIDE HEADER-------*/
@@ -136,7 +155,7 @@ h3 {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 56px;
+    margin-top: 59px;
     flex: 1 0 auto;
 }
 
@@ -156,7 +175,7 @@ main {
     height: 4rem;
     width: 100%;
     font-size: 250%;
-    background-color: #393E46;
+    background-color: var(--bgk-col-nav);
 
     a>i {
         color: #eeddcc;
@@ -176,7 +195,7 @@ main {
 /* Hero section */
 #hero {
     position: relative;
-    height: 35rem;
+    height: 45rem;
     width: 100%;
     /* USE IMAGE INSTEAD FOR ARIA ISSUES */
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
@@ -186,19 +205,19 @@ main {
         position: absolute;
         bottom: 2rem;
         width: 75%;
-        padding-left: 0.5rem;
+        padding-left: 1rem;
         min-height: 6rem;
-        background-color: rgba(219, 238, 208, 0.65);
+        background-color: var(--bkg-col-header);
         font-size: 200%;
-
+        color: var(--font-col-logo);
         h2,
         h3 {
             padding: 0.5rem 0.5rem;
-            color: #0e0d0d;
+            color: var(----font-col-header);
+            font-family: 'Lobster', sans-serif;
         }
+
     }
-
-
 }
 
 /* ---------------------------------------- */
@@ -391,31 +410,20 @@ main {
         text-align: center;
         align-items: center;
         margin: 0.5rem 0;
-
+        font-size: 1.2rem;
         .info-box {
             display: flex;
             flex-direction: column;
             justify-items: baseline;
-
             h4 {
                 font-size: 1.3rem;
                 color: #fafafa;
             }
-        }
-
-        .info-heading {
-            font-size: 1.2rem;
-        }
-
-        .info-heading:hover {
-            scale: 1.5;
-        }
-
-        .info-number {
-            font-size: 1.1rem;
+            .info-source:hover {
+                scale: 1.5;
+            }
         }
     }
-
 }
 
 
@@ -535,30 +543,38 @@ main {
 /* ---- CONFIRMATION PAGE -------------------- */
 /* =========================================== */
 
-
-
 .ok-card {
+
+    margin: 0 auto;
     max-width: 280px;
     border: 1px solid #fafafa;
     line-height: 4;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     text-align: center;
-    padding: 0 1rem;
     border-radius: 10px;
-
+        
     i {
-        background-color: #a8bd22;
-        color: #fafafa;
+        background-color: #222831;
+        color: rgb(72, 226, 33);
+        font-size: 400%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
-    span {
+    p {
         font-size: 150%;
         color: #fafafa;
-        background-color: rgba(17, 139, 68, 0.548);
-        padding: 1rem 1rem;
+        background-color: #454b1b;;
         border-radius: 25px;
+        cursor: pointer;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
-
+    
+    p:hover{
+        background-color: #fafafa;
+        color: #454b1b;
+    }
 
 }
 
@@ -575,17 +591,15 @@ main {
     #additional-content {
         flex-direction: row;
         flex-wrap: wrap;
-
         justify-content: space-around;
-
     }
 
     #img-container {
         columns: 2;
     }
 
+        
     #cover-text {
-        width: 45%;
         font-size: 150%;
     }
 
@@ -626,12 +640,14 @@ main {
 
     }
 
+
     #img-container {
         columns: 3;
     }
 
     #cover-text {
-        max-width: 60rem;
+        right: 2rem;
+        max-width: 25rem;
     }
 
     #small-map {
