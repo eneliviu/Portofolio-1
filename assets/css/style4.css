@@ -30,7 +30,6 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    /* reset the bullet-points list to none */
 }
 
 html {
@@ -72,16 +71,19 @@ h3 {
     box-shadow: 0 3px 3px var(--box-shadow-header-col);
     z-index: 99;
 }
+
 #logo {
     color: var(--font-col-logo);
     font-size: 3rem;
     font-family: 'Lobster', sans-serif;
 }
 
-#nav-toggle {
-    display: none;
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    padding: 0.5rem;
 }
-
 #navbar {
     position: absolute;
     background-color: #e1f1f2;
@@ -89,41 +91,27 @@ h3 {
     width: 100%;
     display: none;
     top: 100%;
-
-    
-
-
-
-    .active {
-        border-bottom: 1px solid #1d1c1b;
-    }
-
-}
-.menu-item {
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
-    padding: 0.5rem;
 }
 .active {
     border-bottom: 1px solid #1d1c1b;
 }
-#navbar > a {
+#navbar a {
     text-transform: capitalize;
     letter-spacing: 2px;
     font-size: 1.75rem;
     font-weight: 600;
     color: #1d1c1b;
 }
-#navbar > a:hover {
+#navbar a:hover {
     scale: 1.25;
     color: #1d1c1b;
 }
-
+#nav-toggle {
+    display: none;
+}
 #nav-toggle:checked~nav {
     display: block;
 }
-
 #nav-toggle-label {
     font-size: 3rem;
     color: var(--font-col-logo);
@@ -177,12 +165,12 @@ main {
     width: 75%;
     padding-left: 1rem;
     min-height: 6rem;
-    background-color: var(--bkg-col-header);
     font-size: 200%;
+    background-color: var(--bkg-col-header);
     color: var(--font-col-logo);
 }
 
-#cover-text  h2, h3 {
+#cover-text h2, h3 {
     padding: 0.5rem 0.5rem;
     color: var(--font-col-header);
     font-family: 'Lobster', sans-serif;
@@ -196,9 +184,11 @@ main {
 
 }
 
-.cats-header h2,h3,h4 {
+.cats-header h2, h3, h4 {
     font-size: 300%;
+    font-family: 'Roboto', sans-serif;
 }
+
 .cats-header p  {
     font-size: 200%;
 }
@@ -223,9 +213,10 @@ main {
     color: var(--font-col-h);
     padding-left: 1rem;
     font-size: 200%;
-    i {
-        color: var(--favi-hearts-col);
-    }
+
+}
+.reason i {
+    color: var(--favi-hearts-col);
 }
 .reason hr {
     border-top: 1px solid var(--font-col);
@@ -243,7 +234,6 @@ main {
         list-style-type: disc;
     }
 }
-
 
 #call-to-action {
     display: flex;
@@ -347,89 +337,96 @@ main {
     scale: 1.5;
 }
 
+
+
 #sign-up {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem  auto;
+
+    #signup-form {
+        font-size: 130%;
+        text-align: left;
+        flex: 1;
+        padding-bottom: 1rem;
+        background-color: var(--bkg-contact-col);
+
+        h2 {
+            padding-top: 1rem;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        h3 {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            text-align: left;
+            text-transform: capitalize;
+        }
+
+        .radio-button {
+            padding-left: 1rem;
+            line-height: 1.5;
+        }
+
+        .how-to-example {
+            padding-left: 1rem;
+            width: 95%;
+
+            #email-address,
+            #image-file,
+            #media-content,
+            #url,
+            #first-name,
+            #last-name {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            p {
+                padding-left: 0.5rem;
+                font-size: 90%;
+            }
+        }
+
+        .text-input {
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            border: 1px solid var(--font-col);
+            border-radius: 0.2rem;
+        }
+
+        .text-input:hover {
+            border: 1px solid var(--contact-border-col);
+        }
+
+        .submit-btn {
+            text-align: center;
+
+            #submit {
+                border-radius: 0.5rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                font-size: 130%;
+                color: #fafafa;
+                background-color: var(--submit-btn-col);
+            }
+
+            #submit:hover {
+                background-color: var(--font-col);
+                color: var(--submit-btn-col);
+            }
+        }
+    }
 }
 
-#signup-form {
-    font-size: 130%;
-    text-align: left;
-    flex: 1;
-    padding-bottom: 1rem;
-    background-color: var(--bkg-contact-col);
-}
-#signup-form h2 {
-    padding-top: 1rem;
-    text-align: center;
-    padding-bottom: 1rem;
-}
-
-#signup-form h3 {
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    text-align: left;
-    text-transform: capitalize;
-}
-
-.radio-button {
-    padding-left: 1rem;
-    line-height: 1.5;
-}
-
-.how-to-example {
-    padding-left: 1rem;
-    width: 95%;
-}
-
-#email-address,
-#image-file,
-#media-content,
-#url,
-#first-name,
-#last-name {
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.how-to-example p {
-    padding-left: 0.5rem;
-    font-size: 90%;
-}
 
 
-.text-input {
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    border: 1px solid var(--font-col);
-    border-radius: 0.2rem;
-}
-
-.text-input:hover {
-    border: 1px solid var(--contact-border-col);
-}
-
-.submit-btn {
-    text-align: center;
-}
-#submit {
-    border-radius: 0.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 130%;
-    color: #fafafa;
-    background-color: var(--submit-btn-col);
-}
-#submit:hover {
-    background-color: var(--font-col);
-    color: var(--submit-btn-col);
-}
 
 .ok-card {
 
@@ -477,11 +474,6 @@ main {
 
     #img-container {
         columns: 2;
-    }
-
-
-    #cover-text {
-        font-size: 150%;
     }
 
     #signup-form {
