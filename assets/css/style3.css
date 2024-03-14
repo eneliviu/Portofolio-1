@@ -1,6 +1,3 @@
-/* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..600&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -9,28 +6,33 @@
     /* reset the bullet-points list to none */
 }
 
-
-
 :root {
     --bgk-col-body: #222831;
-    --bkg-col-header: #393E46;
-    --bkg-col-header: rgba(219, 238, 208, 0.65);
-    --font-col-header: #0e0d0d;
-    --font-col-logo: #1d1c1b;
     --font-col: #fafafa;
+
+   
+    --bkg-col-header: #e1f1f2;
+    --font-col-header: #0e0d0d; 
+    --box-shadow-header-col: #202020;
+    --font-col-logo: #1d1c1b;
+    --font-col-h: #eba0a0;
+  
     --bgk-col-nav: #393E46;
+    --favi-nav-col: #eeddcc; 
+  
     --favi-hearts-col: rgb(238, 53, 53);
+    --favi-likes-col: rgba(238, 231, 228, 0.7);
+
     --card-border-col:#e1f1f2;
     --h-col-light: #eba0a0;
-    --bgk-col-likes: rgba(180, 199, 196, 0.4)
-    --favi-likes-col: #be370d;
-    --bkg-col-contact: rgba(60, 60, 60, 0.6);
+    --bgk-likes-col:  rgba(49, 51, 48, 0.6);
+ 
+    --bkg-contact-col: rgba(60, 60, 60, 0.5);
     --contact-border-col: #e94545;
     --submit-btn-col: #454b1b;
-  }
+    --go-back-col: rgb(243, 236, 233);
+}
 
-
-/* Generic project styles */
 html {
     /* Convert the default value of root font-size from 16 to 10 px 
         to use base 10 for calculations */
@@ -46,13 +48,10 @@ body {
     min-height: 100vh;
 }
 
-/* reset the color and remove the underline for the links in anchor tags*/
 a {
     text-decoration: none;
-    /* NO UNDERLINE FOR LIKNS */
 }
 
-/* Styles for headers h1 to h3*/
 h1,
 h2,
 h3 {
@@ -60,45 +59,30 @@ h3 {
     letter-spacing: 2px;
 }
 
-/* Utility function to hide elements from the user but still be available for search engines*/
 .hidden-heading {
     display: none;
 }
 
-/* =============================================================================== */
-
-/* HEADER -> CONTAINS THE NAVBAR */
-
 #header {
-    background-color: #e1f1f2;
+    background-color: var(--bkg-col-header);
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
     width: 100%;
-    box-shadow: 0 3px 3px #202020;
-    /* thin shadow undernith header and main content */
+    box-shadow: 0 3px 3px var(--box-shadow-header-col);
     z-index: 99;
-
-    /* Always on top */
     #logo {
         color: var(--font-col-logo);
         font-size: 3rem;
         font-family: 'Lobster', sans-serif;
     }
 
-    /* ----- NAVBAR / MENU AS DIV INSIDE HEADER-------*/
-
-    /* #hamburger-menu {} */
-
-
-    /* Hide the checkbox */
     #nav-toggle {
         display: none;
     }
 
-    /* Navbar styles with dropdown toggle */
     #navbar {
         position: absolute;
         background-color: #e1f1f2;
@@ -136,21 +120,16 @@ h3 {
 
     }
 
-    /* Nav toggle: checked on icon click */
     #nav-toggle:checked~nav {
         display: block;
     }
 
-    /* Hamburger menu icon size and color */
     #nav-toggle-label {
         font-size: 3rem;
-        color: #222831;
+        color: var(--font-col-logo);
     }
 
 }
-
-
-/* ------------------------------ MAIN CONTENT ------------------------*/
 
 main {
     display: flex;
@@ -158,10 +137,6 @@ main {
     margin-top: 59px;
     flex: 1 0 auto;
 }
-
-/* --------------------------------------------------------------------*/
-/* ------------------------ FOOTER: DONE ------------------------------*/
-/* --------------------------------------------------------------------*/
 
 #social-networks {
 
@@ -178,7 +153,7 @@ main {
     background-color: var(--bgk-col-nav);
 
     a>i {
-        color: #eeddcc;
+        color: var(--favi-nav-col);
         opacity: 0.6;
     }
 
@@ -189,15 +164,10 @@ main {
 }
 
 
-/* --------------------------------------------------------------------*/
-/* ------------------------------ HOME PAGE ------------------------ */
-
-/* Hero section */
 #hero {
     position: relative;
     height: 45rem;
     width: 100%;
-    /* USE IMAGE INSTEAD FOR ARIA ISSUES */
     background: url("../images/hero-image-3.webp") no-repeat center center/cover;
 
     #cover-text {
@@ -210,29 +180,28 @@ main {
         background-color: var(--bkg-col-header);
         font-size: 200%;
         color: var(--font-col-logo);
+
         h2,
         h3 {
             padding: 0.5rem 0.5rem;
-            color: var(----font-col-header);
+            color: var(--font-col-header);
             font-family: 'Lobster', sans-serif;
         }
-
     }
 }
 
-/* ---------------------------------------- */
-
-/* ADDITIONAL CONTENT SECTION */
-
-#why-cats {
-    margin: 2rem 0.5rem;
+.cats-header {
+    margin: 1rem 0.5rem;
     text-align: center;
-
+    color: var(--font-col-h);
+    padding: 0.5rem 0.5rem;
     h2,
-    h3 {
-        color: #eba0a0;
+    h3, 
+    h4 {
         font-size: 300%;
-        padding: 0.5rem 0;
+    }
+    p  {
+        font-size: 200%;
     }
 }
 
@@ -241,28 +210,25 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: 1rem 0;
 
     .reason {
         display: flex;
         flex-direction: column;
+        margin: 0.5rem;
         padding: 0 0.25rem;
-        min-height: 300px;
-        min-width: 280px;
-
+        min-height: 30rem;
         h3 {
-            color: #eba0a0;
+            color: var(--font-col-h);
             padding-left: 1rem;
             font-size: 200%;
-
             i {
-                color: rgb(238, 53, 53)
+                color: var(--favi-hearts-col);
             }
         }
-
         hr {
-            border-top: 1px solid #fafafa;
+            border-top: 1px solid var(--font-col);
             margin: 0.5rem 0.5rem;
-
         }
 
         ul {
@@ -279,191 +245,126 @@ main {
     }
 }
 
+
 #call-to-action {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    ;
+    margin: 1rem auto;
 
-    margin: 0 auto;
-
-
-
-    .visit-us {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 120%;
-
-        margin-top: 1rem;
-
-        h3 {
-            color: #fafafa;
-            font-size: 150%;
-            cursor: pointer;
-        }
-
-        #small-map {
-            object-fit: contain;
-            display: block;
-        }
-
-        #large-map {
-            object-fit: contain;
-            display: none;
-        }
-
-        h3:hover {
-            color: #eba0a0;
-            ;
-        }
+    h2 {
+        cursor: pointer;
     }
 
+    #cats-collage img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 }
 
-
-/* Hide the card checkbox */
-/* https://www.youtube.com/watch?v=b6_u8IVVLdo&list=PLEKFv-CQMRtBYQCdCg3nLNKsXm7b-yd5Z&index=21*/
-
-/* ============================================================== */
-/* =============    GALLERY PAGE  / REUSABLE ELEMENTS =========== */
-
+#call-to-travel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    .cats-header *:hover {
+        color: var(--font-col-h);
+    }
+    h2,
+    h3 {
+        cursor: pointer;
+    }
+}
 
 
 #img-container {
-    background-color: #222831;
+    background-color: var(--bgk-col-body);
     height: auto;
     width: 100%;
-}
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 0.1rem solid #e1f1f2;
-    break-inside: avoid;
-    margin-top: 0;
-
-    .yb-video {
-        aspect-ratio: 16/9;
-        object-fit: contain;
-        height: auto;
-        width: 100%;
-    }
-}
-
-.card2 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 0.1rem solid #e1f1f2;
-    break-inside: avoid;
-    margin-top: 0;
-
-    .yb-video {
-        aspect-ratio: 16/9;
-        object-fit: contain;
-        height: auto;
-        width: 100%;
-    }
-
-
-    .img-cats {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-
-    .likes {
-        position: absolute;
+    .card2 {
+        position: relative;
         display: flex;
         flex-direction: column;
-        top: 5%;
-        right: 5%;
-        font-size: 2rem;
-        padding: 2rem;
-        line-height: 3;
-        background-color: rgba(180, 199, 196, 0.4);
-
-        a>i {
-            color: #be370d;
-            opacity: 0.7;
-        }
-
-        a>i:hover {
-            scale: 1.5;
-            opacity: 1;
-        }
-
-    }
-
-
-    .moreinfo {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-        justify-content: space-evenly;
-        text-align: center;
         align-items: center;
-        margin: 0.5rem 0;
-        font-size: 1.2rem;
-        .info-box {
+        border: 0.1rem solid var(--card-border-col);
+        break-inside: avoid;
+        margin-top: 0;
+
+        .yb-video {
+            aspect-ratio: 16/9;
+            object-fit: contain;
+            height: auto;
+            width: 100%;
+        }
+
+        .img-cats {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .likes {
+            position: absolute;
             display: flex;
             flex-direction: column;
-            justify-items: baseline;
-            h4 {
-                font-size: 1.3rem;
-                color: #fafafa;
+            top: 5%;
+            right: 5%;
+            font-size: 2rem;
+            padding: 2rem;
+            line-height: 3;
+            background-color: var(--bgk-likes-col);
+
+            a>i {
+                color: var(--favi-likes-col);
+                opacity: 0.7;
             }
-            .info-source:hover {
+
+            a>i:hover {
                 scale: 1.5;
+                opacity: 1;
+            }
+
+        }
+        .moreinfo {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            .info-box {
+                display: flex;
+                flex-direction: column;
+                justify-items: baseline;
+                h4 {
+                    font-size: 1.3rem;
+                    color: var(--font-col);
+                }
+                .info-source:hover {
+                    scale: 1.5;
+                }
             }
         }
     }
 }
 
-
-/*
-.download-btn {
-    background-color: #d31f1f;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    font-size: 150%;
-    opacity: 0.7;
-
-    a>i {
-        color: #fafafa;
-        text-align: center;
-        margin-top: 0.75rem;
-    }
-}
-
-.download-btn:hover {
-    scale: 1.2;
-    opacity: 1;
-}
-*/
-
-
-
-/* -------------------------------------------------------------------*/
-/* ------------------------------ SIGNUP PAGE ------------------------*/
-
-#contact-us {
-    background-color: rgba(60, 60, 60, 0.6);
-    flex: 1;
-
+#sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem  auto;
 
     #signup-form {
-        display: flex;
-        flex-direction: column;
         font-size: 130%;
         text-align: left;
+        flex: 1;
+        padding-bottom: 1rem;
+        background-color: var(--bkg-contact-col);
 
         h2 {
             padding-top: 1rem;
@@ -508,12 +409,12 @@ main {
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
             width: 100%;
-            border: 1px solid #fafafa;
+            border: 1px solid var(--font-col);
             border-radius: 0.2rem;
         }
 
         .text-input:hover {
-            border: 1px solid #e94545;
+            border: 1px solid var(--contact-border-col);
         }
 
         .submit-btn {
@@ -527,35 +428,30 @@ main {
                 padding-bottom: 1rem;
                 font-size: 130%;
                 color: #fafafa;
-                background-color: #454b1b;
+                background-color: var(--submit-btn-col);
             }
 
             #submit:hover {
-                background-color: #fafafa;
-                color: #454b1b;
+                background-color: var(--font-col);
+                color: var(--submit-btn-col);
             }
         }
     }
 }
 
-/* =========================================== */
-/* =========================================== */
-/* ---- CONFIRMATION PAGE -------------------- */
-/* =========================================== */
-
 .ok-card {
 
     margin: 0 auto;
     max-width: 280px;
-    border: 1px solid #fafafa;
+    border: 1px solid var(--font-col);
     line-height: 4;
     padding: 2rem 2rem;
     text-align: center;
     border-radius: 10px;
-        
+
     i {
-        background-color: #222831;
-        color: rgb(72, 226, 33);
+        background-color: var(--bgk-col-body);
+        color: var(--go-back-col);
         font-size: 400%;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -563,42 +459,36 @@ main {
 
     p {
         font-size: 150%;
-        color: #fafafa;
-        background-color: #454b1b;;
+        color: var(--font-col);
+        background-color: var(--submit-btn-col);
+        ;
         border-radius: 25px;
         cursor: pointer;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
-    
-    p:hover{
-        background-color: #fafafa;
-        color: #454b1b;
+
+    p:hover {
+        background-color: var(--font-col);
+        color:var(--submit-btn-col);
     }
 
 }
 
-
-/* =========================================== */
-/* =========================================== */
-/* ---- MEDIA QURIES / RESPONSIVE DESIGN ---- */
-
-/* THE DEFAULT RESPONSIVE DESIGN OPTIMIZED FOR MOBILES (<567px width) 
-
-/* Media query: large or landscape phones (567px and up) */
 @media screen and (min-width: 567px) {
 
     #additional-content {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+
     }
 
     #img-container {
         columns: 2;
     }
 
-        
+
     #cover-text {
         font-size: 150%;
     }
@@ -606,15 +496,16 @@ main {
     #signup-form {
         max-width: 554px;
         position: relative;
-        margin: 0 auto;
+        height: 300px;
     }
 
+    #map {
+        width: 567px;
+        height: 400px;
+    }
 
 }
 
-
-
-/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
     #nav-toggle-label,
@@ -640,28 +531,22 @@ main {
 
     }
 
-
     #img-container {
         columns: 3;
     }
 
     #cover-text {
-        right: 2rem;
+        right: 8rem;
         max-width: 25rem;
     }
 
-    #small-map {
-        display: none;
+    #map {
+        width: 768px;
+        height: 400px;
     }
 
-    #large-map {
-        object-fit: cover;
-        display: block;
-    }
 }
 
-
-/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
     #additional-content {
@@ -670,6 +555,12 @@ main {
 
     #img-container {
         columns: 4;
+    }
+
+    #map {
+        width: 992px;
+        height: 400px;
+
     }
 
 }

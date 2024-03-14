@@ -19,18 +19,20 @@
   <link rel="manifest" href="assets/favicon/site.webmanifest">
 
 
+  <!--
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&display=swap" rel="stylesheet">
-
+-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
 
 
@@ -47,8 +49,6 @@
       <h1 id="logo"> Purrfecto </h1>
     </a>
 
-    <!--<div id="hamburger-menu">
-      </div>-->
     <input type="checkbox" id="nav-toggle" name="nav-toggle">
     <label for="nav-toggle" id="nav-toggle-label">
       <i class="fa-solid fa-bars"></i>
@@ -72,15 +72,14 @@
       </div>
     </section>
 
-    <div id="why-cats">
-      <h2>Why loving cats?</h2>
+
+    <div class="cats-header">
+      <h2>Why do we love cats?</h2>
     </div>
 
     <section id="additional-content" aria-label="General facts about cats">
       <h2 class="hidden-heading">Reasons for loving cats</h2>
-
       <article>
-
         <div class="reason">
           <h3> Stress Relief <i class="fa-solid fa-heart"></i></h3>
           <hr>
@@ -145,39 +144,35 @@
 
     </section>
 
-
     <section id="call-to-action">
 
-      <div class="visit-us">
-        <a href="gallery3.html">
-          <h3> Visit our gallery! </h3>
-        </a>
+      <a href="gallery3.html" , target="_blank">
+        <div class="cats-header">
+          <h2> Visit our image gallery! </h2>
+        </div>
+      </a>
+
+      <div id="cats-collage">
+        <img src="assets//images/cats/collage.webp" alt="collage with cats" loading="lazy">
       </div>
-
-      <div class="visit-us">
-        <h3> Visit Ainoshima - The Cat Heaven Island! </h3>
-
-        <iframe id="small-map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11855466.393614946!2d132.38621517131475!3d34.29671697765648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3545615a1e5be903%3A0xa6a816cd520f72b0!2sAo%20Island!5e0!3m2!1sen!2sse!4v1710351719730!5m2!1sen!2sse"
-          width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <iframe id="large-map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11855466.393614946!2d132.38621517131475!3d34.29671697765648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3545615a1e5be903%3A0xa6a816cd520f72b0!2sAo%20Island!5e0!3m2!1sen!2sse!4v1710351719730!5m2!1sen!2sse"
-          width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-
-      </div>
-
-
-
 
     </section>
 
+    <section id="call-to-travel">
+      <a href="https://en.wikipedia.org/wiki/Aoshima,_Ehime" , target="_blank">
+        <div class="cats-header">
+          <h2> Visit Ainoshima! </h2>
+          <p> - The Cat's Heaven Island - </p>
+        </div>
+      </a>
 
+      <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11855466.393614946!2d132.38621517131475!3d34.29671697765648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3545615a1e5be903%3A0xa6a816cd520f72b0!2sAo%20Island!5e0!3m2!1sen!2sse!4v1710351719730!5m2!1sen!2sse"
+        width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" alt="Google Maps Ainoshima Island Japan">
+      </iframe>
+
+    </section>
 
   </main>
 
