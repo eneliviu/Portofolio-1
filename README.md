@@ -1,5 +1,5 @@
 # Welcome to Purrfecto - the hub where cat lovers unite!
-Purrfecto is an online hub where cat lovers (an dnot only) can share and enjoy images (and possibly videos) of their beloved feline friends. 
+Purrfecto is an online hub where cat lovers (and not only) can share and enjoy images (and possibly videos) of their beloved feline friends. 
 The site aims to helping people of all ages across the world to connect and build-up a vibrant community.
 
 
@@ -69,7 +69,7 @@ The Home page is page is fully responsive and contains the following sections:
 - After sending a like by clicking on the icon embedded in the figure, a confirmation massage is provided in the likes.html page that opens in a new tab  where the user has the option to navigate back to the gallery page.  
  ![Likes confirmation page](assets/images/readme-views/likes-page-moderatescreen.webp) 
 
-### Join-Us page
+### Join Us page
 - The page contains a form providing the users with the options for registering to the hub via name and a valid email address. 
     - The name fields are required to be filled in
     - Providing a valid email adress is mandatory for registration. 
@@ -95,7 +95,7 @@ The Home page is page is fully responsive and contains the following sections:
 - The .html and .css files were checked using the validator available at https://validator.w3.org/nu/ via direct text input, and apparently no errors nor warnings were found.
 - For all pages, the color contrast was checked using the tools provided by https://coolors.co/, and all the results were at least very good 
 
-## Unfixed Bug:
+## Unfixed Bugs:
 - email validation: fails to check for valid domain. I tried to use the regex syntax according to https://regexr.com/, but is still possible to submit an email without a valid domain (for instance, name@domain is allowed)
 - the uploading of the Gallery page is rather slow, despite using the lazy-loading attribute for each of the images.
  ![Email bug](assets/images/readme-views/email-bug.webp)
