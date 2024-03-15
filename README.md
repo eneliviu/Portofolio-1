@@ -47,7 +47,7 @@ All pages share a few common features such as:
 The Home page is page is fully responsive and contains the following sections: 
 - Hero section:
     - Includes an eye-catching and soul-melting AI-generated image of kittens
-    the  'Purrfecto' is overlayed over the landing image.
+    - the 'Purrfecto' - logo is overlayed over the landing image.
     ![Hero image small screen](assets/images/readme-views/hero-view-smallscreen.webp)
     ![Hero image larger screen](assets/images/readme-views/hero-view-largescreen.webp)
 - Additional content section:
