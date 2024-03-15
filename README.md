@@ -31,25 +31,29 @@ All pages share a few common features such as:
         - The menu is compact on small displays and fully visible on larger ones    
         - The name of the active page is uderlined in the menu bar
         - The page names scale up when hovering over them while the cursor changes to pointer-style  
-    - Includes links to the Logo as well as to the Home, Gallery and Join-Us pages 
-    ![Navbar small screen](assets/images/readme-views/navbar-smallscreen.webp)
-    ![Navbar small screen](assets/images/readme-views/navbar-smallscreen-toogle.webp)
-     ![Navbar small screen](assets/images/readme-views/navbar-largescreen.webp)
+    - Includes links to the Logo as well as to the Home, Gallery and Join-Us pages
+
+![Navbar small screen](assets/images/readme-views/navbar-smallscreen.webp)
+![Navbar small screen](assets/images/readme-views/navbar-smallscreen-toogle.webp)
+![Navbar small screen](assets/images/readme-views/navbar-largescreen.webp)
 
   * Footer
     - Consistent on each page   
     - Contains icons/links to some of the major media-platforms (Facebook, Twitter, YouTube and Instagram)
         - The provided links open in new tabs
         - When hovering, the icons scale up and change the opacity
-    ![Footer](assets/images/readme-views/footer.webp)   
+
+![Footer](assets/images/readme-views/footer.webp)   
 
 ### Home page
 The Home page is page is fully responsive and contains the following sections: 
 - Hero section:
     - Includes an eye-catching and soul-melting AI-generated image of kittens
     - the 'Purrfecto' - logo is overlayed over the landing image.
-    ![Hero image small screen](assets/images/readme-views/hero-view-smallscreen.webp)
-    ![Hero image larger screen](assets/images/readme-views/hero-view-largescreen.webp)
+
+![Hero image small screen](assets/images/readme-views/hero-view-smallscreen.webp)
+![Hero image larger screen](assets/images/readme-views/hero-view-largescreen.webp)
+
 - Additional content section:
     - Includes four articles that presents general facts about cats formatted as unordered lists
     - The text content for the articles was generated using ChatGPT
@@ -64,10 +68,12 @@ The Home page is page is fully responsive and contains the following sections:
     - The statistics (number of views and downloads) will be further used for ranking the content.
 - The page uses a masonry layout to create visually pleasent display of cards of different extents.
 - The cards can contain either images and can be easily adjusted for video material.  
-    ![Gallery page](assets/images/readme-views/gallery-view-largescreen.webp)  
+
+![Gallery page](assets/images/readme-views/gallery-view-largescreen.webp)  
 
 - After sending a like by clicking on the icon embedded in the figure, a confirmation massage is provided in the likes.html page that opens in a new tab  where the user has the option to navigate back to the gallery page.  
- ![Likes confirmation page](assets/images/readme-views/likes-page-moderatescreen.webp) 
+
+![Likes confirmation page](assets/images/readme-views/likes-page-moderatescreen.webp) 
 
 ### Join Us page
 - The page contains a form providing the users with the options for registering to the hub via name and a valid email address. 
@@ -82,7 +88,8 @@ The Home page is page is fully responsive and contains the following sections:
     - It is also possible to provide the URL for the source of the uploaded material, such as personal websites or posts on other media plaforms   
 - Uploading media files is not mandatory for registration    
 - After submitting the regsitration form, a confirmation massage is provided in the likes.html page that opens in a new tab  where the user has the option to navigate back to the gallery page.  
-  ![Join-Us page](assets/images/readme-views/joinus-page-moderatescreen.webp)   
+
+![Join-Us page](assets/images/readme-views/joinus-page-moderatescreen.webp)   
 
 ### Styling
 - The CSS styling is provided in the style.css file.
@@ -98,7 +105,8 @@ The Home page is page is fully responsive and contains the following sections:
 ## Unfixed Bugs:
 - email validation: fails to check for valid domain. I tried to use the regex syntax according to https://regexr.com/, but is still possible to submit an email without a valid domain (for instance, name@domain is allowed)
 - the uploading of the Gallery page is rather slow, despite using the lazy-loading attribute for each of the images.
- ![Email bug](assets/images/readme-views/email-bug.webp)
+
+![Email bug](assets/images/readme-views/email-bug.webp)
 
  ## TODO list
  - Add more general info about cats
