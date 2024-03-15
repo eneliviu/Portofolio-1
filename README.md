@@ -1,9 +1,11 @@
 # Welcome to Purrfecto - the cat enthusiast' hub 
-Purrfecto is an online hub where cat lovers (an dnot only) can share and enjoy images and videos of their beloved feline friends. 
+Purrfecto is an online hub where cat lovers (an dnot only) can share and enjoy images (and possibly videos) of their beloved feline friends. 
 The site aims to helping people of all ages across the world to connect and build-up a vibrant community.
 
 ## Main features
-The site has a standard structure with three content (Home, Gallery and Join-us) corresponding to index.hmtl, gallery.html and contact.html files in the project. Additionaly, the site has a confirmation page (see the Join-Us section below) associated to the likes.html file. 
+The site has a standard structure with three content (Home, Gallery and Join-us) corresponding to index.hmtl, gallery.html and contact.html files in the project. 
+Additionaly, the site has a confirmation page (see the Join-Us section below) associated to the likes.html file. 
+
 All pages share a few common features such as:
 * Navigation bar 
     - Fully responsive and identical on each page
@@ -14,7 +16,7 @@ All pages share a few common features such as:
         - The name of the active page is uderlined in the menu bar
         - The page names scale up when hovering over them while the cursor changes to pointer-style  
     - Includes links to the Logo as well as to the Home, Gallery and Join-Us pages 
-* Footer
+  * Footer
     - Consistent on each page   
     - Contains icons/links to some of the major media-platforms (Facebook, Twitter, YouTube and Instagram)
         - The provided links open in new tabs
@@ -40,7 +42,7 @@ The Home page is page is fully responsive and contains the following sections:
 - The media files are inserted into reusable card objects that provide statistics functionality such as send-likes and download options. 
     - The statistics (number of views and downloads) will be further used for ranking the content.
 - The page uses a masonry layout to create visually pleasent display of cards of different extents.
-- The cards can contain either images or video material.  
+- The cards can contain either images and can be easily adjusted for video material.  
     ![Gallery page](assets/images/readme-views/gallery-view-largescreen.webp)  
 
 - After sending a like by clicking on the icon embedded in the figure, a confirmation massage is provided in the likes.html page that opens in a new tab  where the user has the option to navigate back to the gallery page.  
@@ -64,7 +66,8 @@ The Home page is page is fully responsive and contains the following sections:
 ### Styling
 - The CSS styling is provided in the style.css file.
 - The stying overrides the default styles added by the browser, and the default value of the root font-size is converted from 16 to 10 px to facilitate the use of base 10 for measurement unit calculations when using rem. 
-- I tried to write reusable code by defining CSS classes that can accomodate several situations, yet the code became quite large and difficult to follow.    
+- I tried to write reusable code by defining CSS classes that can accomodate several situations, yet the code became quite large and difficult to follow.  
+- The website uses the Roboto and Lobster font families imported from Google fonts. The Lobster is used for the Hero-section, while the text in the main content uses Roboto.    
 
 ## Testing and validation
 - The website was tested on Chrome, Brave and Edge web browsers on a Windows 11 PC, as well as on an Android system (Samsung Galaxy S21 mobile phone), and no issues were noticed.
@@ -74,8 +77,17 @@ The Home page is page is fully responsive and contains the following sections:
 ## Unfixed Bug:
 - email validation: fails to check for valid domain. I tried to use the regex syntax according to https://regexr.com/, but is still possible to submit an email without a valid domain (for instance, name@domain is allowed)
 - the uploading of the Gallery page is rather slow, despite using the lazy-loading attribute for each of the images.
- ![Email bug](assets/images/readme-views/email-bug.webp)  
+ ![Email bug](assets/images/readme-views/email-bug.webp)
+
+ ## TODO list
+ - Add more general info about cats
+ - Card objects for Video files
+ - Video gallery page
+ - Blog section
+  
 ## Credits
+- The favicon for the website was generated from text using the https://favicon.io/ tools. 
+- All the other icons were obtained from fontawesome.com
 - The AI-images were generated using the free-tier functionality provided by https://playground.ai/. 
 - The image files in the Gallery page were downloaded from unsplash.com website. For each image in the gallery, the link to the file sources were provided and are accessible through the "Source"-reference available in the image cards. 
 - The use of ChatGPT was restrictes to getting sensible inputs for the text content in the website. No HTML nor CSS code was produced using AI-models.

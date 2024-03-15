@@ -285,7 +285,6 @@ main {
     align-items: center;
     margin: 1rem auto;
 }
-
 #call-to-travel a>h2 {
     margin: 1rem 0.5rem;
     color: var(--font-col-h);
@@ -293,7 +292,6 @@ main {
     font-size: 300%;
     text-align: center;
 }
-
 #call-to-travel a>h3 {
     margin: 1rem 0.5rem;
     color: var(--font-col-h);
@@ -304,13 +302,13 @@ main {
 
 
 
+
 #img-container {
     background-color: var(--bgk-col-body);
     height: auto;
     width: 100%;
 }
-
-.card2 {
+.card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -319,20 +317,11 @@ main {
     break-inside: avoid;
     margin-top: 0;
 }
-
 .img-cats {
     width: 100%;
     height: auto;
     object-fit: contain;
 }
-
-.yb-video {
-    aspect-ratio: 16/9;
-    object-fit: contain;
-    height: auto;
-    width: 100%;
-}
-
 .likes {
     position: absolute;
     display: flex;
@@ -344,17 +333,14 @@ main {
     line-height: 3;
     background-color: var(--bgk-likes-col);
 }
-
 .likes a>i {
     color: var(--favi-likes-col);
     opacity: 0.7;
 }
-
 .likes a>i:hover {
     scale: 1.5;
     opacity: 1;
 }
-
 .moreinfo {
     display: flex;
     flex-direction: row;
@@ -366,18 +352,15 @@ main {
     margin: 0.5rem 0;
     font-size: 1.2rem;
 }
-
 .info-box {
     display: flex;
     flex-direction: column;
     justify-items: baseline;
 }
-
 .info-box h4 {
     font-size: 1.3rem;
     color: var(--font-col);
 }
-
 .info-source:hover {
     scale: 1.5;
 }
