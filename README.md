@@ -2,6 +2,22 @@
 Purrfecto is an online hub where cat lovers (an dnot only) can share and enjoy images (and possibly videos) of their beloved feline friends. 
 The site aims to helping people of all ages across the world to connect and build-up a vibrant community.
 
+
+## Project structure
+The project structure is as follows:  
+- index.html
+- gallery.html
+- contact.html
+- likes.html
+- assets folder
+    - css folder
+        - style.css
+    - favicon folder
+    - images folder
+        - cats folder containing images of cats
+        - readme-views containing screen shots for various website components
+
+
 ## Main features
 The site has a standard structure with three content (Home, Gallery and Join-us) corresponding to index.hmtl, gallery.html and contact.html files in the project. 
 Additionaly, the site has a confirmation page (see the Join-Us section below) associated to the likes.html file. 
