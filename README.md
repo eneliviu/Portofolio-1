@@ -1,39 +1,92 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Welcome to Purrfecto - the cat enthusiast' hub 
+Purrfecto is an online hub where cat lovers (an dnot only) can share and enjoy images and videos of their beloved feline friends. 
+The site aims to helping people of all ages across the world to connect and build-up a vibrant community.
 
-Welcome,
+## Main features
+The site has a standard structure with three content (Home, Gallery and Join-us) corresponding to index.hmtl, gallery.html and contact.html files in the project. Additionaly, the site has a confirmation page (see the Join-Us section below) associated to the likes.html file. 
+All pages share a few common features such as:
+* Navigation bar 
+    - Fully responsive and identical on each page
+    - Contains the Logo (Purrfecto)
+        - The Logo is combination of two words - 'purr' and 'perfect', with an Italian spin.
+    - A reponsive menu
+        - The menu is compact on small displays and fully visible on larger ones    
+        - The name of the active page is uderlined in the menu bar
+        - The page names scale up when hovering over them while the cursor changes to pointer-style  
+    - Includes links to the Logo as well as to the Home, Gallery and Join-Us pages 
+* Footer
+    - Consistent on each page   
+    - Contains icons/links to some of the major media-platforms (Facebook, Twitter, YouTube and Instagram)
+        - The provided links open in new tabs
+        - When hovering, the icons scale up and change the opacity   
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Home page
+The Home page is page is fully responsive and contains the following sections: 
+- Hero section:
+    - Includes an eye-catching and soul-melting AI-generated image of kittens
+    the  'Purrfecto' is overlayed over the landing image.
+    ![Hero image small screen](assets/images/cats/hero-image-3.webp)
+    ![Hero image larger screen](image-1.png)
+- Additional content section:
+    - Includes four articles that presents general facts about cats formatted as unordered lists
+    - The text content for the articles was generated using ChatGPT
+    - Call to action section provides a link to the image gallery page, and portraits an AI-generated collage of cats as a preview
+- The map section: 
+    - contains an embedded Google map of the Ainoshima island in Japan which is pretty famous for its stray cat population. A link to a dedicated Wikipedia article is also provided
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+### Gallery page
+- The Gallery page contains media content in form of images uploaded by the users. 
+- The media files are inserted into reusable card objects that provide statistics functionality such as send-likes and download options. 
+    - The statistics (number of views and downloads) will be further used for ranking the content.
+- The page uses a masonry layout to create visually pleasent display of cards of different extents.
+- The cards can contain either images or video material.    
 
-## Codeanywhere Reminders
+### Join-Us page
+- The page contains a form providing the users with the options for registering to the hub via name and a valid email address. 
+    - The name fields are required to be filled in
+    - Providing a valid email adress is mandatory for registration. 
+- A group of radio buttons has been included in the form for retrieveing information on how people are finding the website, either from media platforms, personal contacts or via other channels. 
+    - The survey will help optimizing the media marketing.
+- Functionality for uploading media files is also provided with certain restrictions
+    - The hub accepts only image files in .png, .webp, .jpeg or .gif formats, and .mp4 video files
+    - All files are required to have max 4MB in size
+    - Users can provide a short description of maximum 25 characters for the content to be uploaded
+    - It is also possible to provide the URL for the source of the uploaded material, such as personal websites or posts on other media plaforms   
+- Uploading media files is not mandatory for registration    
+- After submitting the regsitration form, a confirmation massage is provided in the likes.html page that opens in a new tab  where the user has the option to navigate back to the gallery page.    
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Styling
+- The CSS styling is provided in the style.css file.
+- The stying overrides the default styles added by the browser, and the default value of the root font-size is converted from 16 to 10 px to facilitate the use of base 10 for measurement unit calculations when using rem. 
+- I tried to write reusable code by defining CSS classes that can accomodate several situations, yet the code became quite large and difficult to follow.    
 
-`python3 -m http.server`
+## Testing and validation
+- The website was tested on Chrome, Brave and Edge web browsers on a Windows 11 PC, as well as on an Android system (Samsung Galaxy S21 mobile phone), and no issues were noticed.
+- The .html and .css files were checked using the validator available at https://validator.w3.org/nu/ via direct text input, and apparently no errors nor warnings were found.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Unfixed Bug:
+- email validation: fails to check for valid domain. I tried to use the regex syntax according to https://regexr.com/, but is still possible to submit an email without a valid domain (e.g., name@domain is allowed)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Credits
+- The AI-images were generated using the free-tier functionality provided by https://playground.ai/. 
+- The image files in the Gallery page were downloaded from unsplash.com website. For each image in the gallery, the link to the file sources were provided and are accessible through the "Source"-reference available in the image cards. 
+- The use of ChatGPS was restrictes to getting sensible inputs for the text content in the website. No html and css code was produced using AI-models.
+- A special aknowledgment should go to Kevin Powels' YouTube channel (https://www.youtube.com/@KevinPowell) where interesting topics such as the use of flex and grid layouts, form validation and tips on VScode for web development (among others) are discussed.
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
 
-Happy coding!
+
+
+
+
+
+
+    ###
+
+    ###

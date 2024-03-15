@@ -178,7 +178,7 @@ main {
 
 #hero {
     position: relative;
-    height: 45rem;
+    height: 40rem;
     width: 100%;
     background: url("../images/cats/hero-image-3.webp") no-repeat center center/cover;
 }
@@ -219,41 +219,36 @@ main {
     align-items: center;
     width: 100%;
     margin: 1rem 0;
+}
+.reason {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0 0.25rem;
+    min-height: 30rem;
+}
+.reason  h3 {
+    color: var(--font-col-h);
+    padding-left: 1rem;
+    font-size: 200%;
+}
+.reason  h3 > i {
+    color: var(--favi-hearts-col);
+}
+.reason hr {
+    border-top: 1px solid var(--font-col);
+    margin: 0.5rem 0.5rem;
+}
+.reason ul {
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 180%;
+    max-width: 280px;
 
-    .reason {
-        display: flex;
-        flex-direction: column;
-        margin: 0.5rem;
-        padding: 0 0.25rem;
-        min-height: 30rem;
-
-        h3 {
-            color: var(--font-col-h);
-            padding-left: 1rem;
-            font-size: 200%;
-
-            i {
-                color: var(--favi-hearts-col);
-            }
-        }
-
-        hr {
-            border-top: 1px solid var(--font-col);
-            margin: 0.5rem 0.5rem;
-        }
-
-        ul {
-            text-align: left;
-            padding-left: 2rem;
-            font-size: 180%;
-            max-width: 280px;
-
-            li {
-                padding: 0.5rem 0;
-                list-style-type: disc;
-            }
-        }
-    }
+}
+.reason ul > li {
+    padding: 0.5rem 0;
+    list-style-type: disc;
 }
 
 
@@ -291,7 +286,7 @@ main {
     margin: 1rem auto;
 }
 
-#call-to-travel a > h2 {
+#call-to-travel a>h2 {
     margin: 1rem 0.5rem;
     color: var(--font-col-h);
     padding: 0.5rem 0.5rem;
@@ -299,7 +294,7 @@ main {
     text-align: center;
 }
 
-#call-to-travel a > h3 {
+#call-to-travel a>h3 {
     margin: 1rem 0.5rem;
     color: var(--font-col-h);
     padding: 0.5rem 0.5rem;
@@ -314,6 +309,7 @@ main {
     height: auto;
     width: 100%;
 }
+
 .card2 {
     position: relative;
     display: flex;
@@ -323,17 +319,20 @@ main {
     break-inside: avoid;
     margin-top: 0;
 }
+
 .img-cats {
     width: 100%;
     height: auto;
     object-fit: contain;
 }
+
 .yb-video {
     aspect-ratio: 16/9;
     object-fit: contain;
     height: auto;
     width: 100%;
 }
+
 .likes {
     position: absolute;
     display: flex;
@@ -345,14 +344,17 @@ main {
     line-height: 3;
     background-color: var(--bgk-likes-col);
 }
+
 .likes a>i {
     color: var(--favi-likes-col);
     opacity: 0.7;
 }
+
 .likes a>i:hover {
     scale: 1.5;
     opacity: 1;
 }
+
 .moreinfo {
     display: flex;
     flex-direction: row;
@@ -364,15 +366,18 @@ main {
     margin: 0.5rem 0;
     font-size: 1.2rem;
 }
+
 .info-box {
     display: flex;
     flex-direction: column;
     justify-items: baseline;
 }
+
 .info-box h4 {
     font-size: 1.3rem;
     color: var(--font-col);
 }
+
 .info-source:hover {
     scale: 1.5;
 }
@@ -386,19 +391,23 @@ main {
     align-items: center;
     flex: 1;
 }
+
 #signup-form {
     font-size: 130%;
     background-color: var(--bkg-contact-col);
     margin: 0 auto;
 }
+
 .how-to-example {
     padding-left: 1rem;
     width: 95%;
 }
+
 .how-to-example p {
     padding-left: 0.5rem;
     font-size: 90%;
-} 
+}
+
 #email-address,
 #image-file,
 #media-content,
@@ -408,6 +417,7 @@ main {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 .text-input {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
@@ -415,20 +425,24 @@ main {
     border: 1px solid var(--font-col);
     border-radius: 0.2rem;
 }
+
 .text-input:hover {
     border: 1px solid var(--contact-border-col);
 }
+
 .radio-button {
     padding-left: 1.5rem;
     line-height: 1.5;
     width: 100%;
 }
-#signup-form > h2 {
+
+#signup-form>h2 {
     padding-top: 1rem;
     text-align: center;
     padding-bottom: 1rem;
 }
-#signup-form > h3 {
+
+#signup-form>h3 {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -436,12 +450,14 @@ main {
     text-transform: capitalize;
     color: var(--font-col);
 }
+
 .submit-btn {
     text-align: center;
     margin: 0 auto;
     padding: 2rem 0;
 
 }
+
 #submit {
     border-radius: 0.5rem;
     padding: 1.5rem 3rem;
@@ -450,21 +466,19 @@ main {
     color: #fafafa;
     background-color: var(--submit-btn-col);
 }
+
 #submit:hover {
     background-color: var(--font-col);
     color: var(--submit-btn-col);
 }
 
 
-
-
 .ok-card {
-
-    margin: 0 auto;
+    margin: 2% auto;
     max-width: 280px;
     border: 1px solid var(--font-col);
     line-height: 4;
-    padding: 2rem 2rem;
+    padding: 0.5rem 3rem;
     text-align: center;
     border-radius: 10px;
 }
