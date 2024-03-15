@@ -24,8 +24,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
@@ -44,15 +42,15 @@
       <h1 id="logo"> Purrfecto </h1>
     </a>
 
-    <input type="checkbox" id="nav-toggle" name="nav-toggle">
+    <input id="nav-toggle" type="checkbox" name="nav-toggle">
     <label for="nav-toggle" id="nav-toggle-label">
       <i class="fa-solid fa-bars"></i>
     </label>
 
     <nav id="navbar">
-      <div class="menu-item"><a href="index.html" class="active"> Home </a></div>
-      <div class="menu-item"><a href="gallery3.html"> Gallery </a></div>
-      <div class="menu-item"><a href="contact.html"> Join us! </a></div>
+      <div class="menu-item"> <a href="index.html" class="active"> Home </a> </div>
+      <div class="menu-item"> <a href="gallery3.html"> Gallery </a> </div>
+      <div class="menu-item"> <a href="contact.html"> Join us! </a> </div>
     </nav>
 
 
@@ -60,15 +58,14 @@
 
   <main>
 
-    <section id="hero" aria-label="Hero Section">
+    <section id="hero" aria-label="Hero Section"> <!-- CHECK ARIA ELEMENTS-->
       <div id="cover-text">
-        <h2> <i class="fa-solid fa-cat"></i> Purrfect Companions </h2>
-
+        <h2> <i class="fa-solid fa-cat"> </i> Purrfect Companions </h2>
       </div>
     </section>
+    <br>
 
-
-    <div class="cats-header">
+    <div id="cats-header">
       <h2>Why do we love cats?</h2>
     </div>
 
@@ -142,9 +139,7 @@
     <section id="call-to-action">
 
       <a href="gallery3.html" , target="_blank">
-        <div class="cats-header">
-          <h2> Visit our image gallery! </h2>
-        </div>
+        <h2> Visit our image gallery! </h2>
       </a>
 
       <div id="cats-collage">
@@ -155,10 +150,8 @@
 
     <section id="call-to-travel">
       <a href="https://en.wikipedia.org/wiki/Aoshima,_Ehime" , target="_blank">
-        <div class="cats-header">
-          <h2> Visit Ainoshima! </h2>
-          <p> - The Cat's Heaven Island - </p>
-        </div>
+        <h2> Visit Ainoshima! </h2>
+        <h3> - The Cat's Heaven Island - </h3>
       </a>
 
       <iframe id="map"
