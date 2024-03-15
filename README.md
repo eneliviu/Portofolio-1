@@ -19,7 +19,7 @@ The project structure is as follows:
 
 
 ## Main features
-The site has a standard structure with three content (Home, Gallery and Join-us) corresponding to index.hmtl, gallery.html and contact.html files in the project. 
+The site has a standard structure with three content (Home, Gallery and Join Us!) corresponding to index.hmtl, gallery.html and contact.html files in the project. 
 Additionaly, the site has a confirmation page (see the Join-Us section below) associated to the likes.html file. 
 
 All pages share a few common features such as:
