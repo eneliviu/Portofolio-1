@@ -25,8 +25,8 @@ The Home page is page is fully responsive and contains the following sections:
 - Hero section:
     - Includes an eye-catching and soul-melting AI-generated image of kittens
     the  'Purrfecto' is overlayed over the landing image.
-    ![Hero image small screen](assets/images/cats/hero-image-3.webp)
-    ![Hero image larger screen](image-1.png)
+    ![Hero image small screen](assets/images/readme-views/hero-view-smallscreen.webp)
+    ![Hero image larger screen](assets/images/readme-views/hero-view-largescreen.webp)
 - Additional content section:
     - Includes four articles that presents general facts about cats formatted as unordered lists
     - The text content for the articles was generated using ChatGPT
@@ -35,11 +35,16 @@ The Home page is page is fully responsive and contains the following sections:
     - contains an embedded Google map of the Ainoshima island in Japan which is pretty famous for its stray cat population. A link to a dedicated Wikipedia article is also provided
 
 ### Gallery page
-- The Gallery page contains media content in form of images uploaded by the users. 
+- The Gallery page contains media content in form of images uploaded by the users.
+- All the images were downloaded from unsplash.com in .jpeg format and post-processed using the GIMP-software to reduce their sizes (in MB) and convert to .webp format.  
 - The media files are inserted into reusable card objects that provide statistics functionality such as send-likes and download options. 
     - The statistics (number of views and downloads) will be further used for ranking the content.
 - The page uses a masonry layout to create visually pleasent display of cards of different extents.
-- The cards can contain either images or video material.    
+- The cards can contain either images or video material.  
+    ![Gallery page](assets/images/readme-views/gallery-view-largescreen.webp)  
+
+- After sending a like by clicking on the icon embedded in the figure, a confirmation massage is provided in the likes.html page that opens in a new tab  where the user has the option to navigate back to the gallery page.  
+ ![Likes confirmation page](assets/images/readme-views/likes-page-moderatescreen.webp) 
 
 ### Join-Us page
 - The page contains a form providing the users with the options for registering to the hub via name and a valid email address. 
@@ -53,7 +58,8 @@ The Home page is page is fully responsive and contains the following sections:
     - Users can provide a short description of maximum 25 characters for the content to be uploaded
     - It is also possible to provide the URL for the source of the uploaded material, such as personal websites or posts on other media plaforms   
 - Uploading media files is not mandatory for registration    
-- After submitting the regsitration form, a confirmation massage is provided in the likes.html page that opens in a new tab  where the user has the option to navigate back to the gallery page.    
+- After submitting the regsitration form, a confirmation massage is provided in the likes.html page that opens in a new tab  where the user has the option to navigate back to the gallery page.  
+  ![Join-Us page](assets/images/readme-views/joinus-page-moderatescreen.webp)   
 
 ### Styling
 - The CSS styling is provided in the style.css file.
@@ -63,30 +69,14 @@ The Home page is page is fully responsive and contains the following sections:
 ## Testing and validation
 - The website was tested on Chrome, Brave and Edge web browsers on a Windows 11 PC, as well as on an Android system (Samsung Galaxy S21 mobile phone), and no issues were noticed.
 - The .html and .css files were checked using the validator available at https://validator.w3.org/nu/ via direct text input, and apparently no errors nor warnings were found.
+- For all pages, the color contrast was checked using the tools provided by https://coolors.co/, and all the results were at least very good 
 
 ## Unfixed Bug:
-- email validation: fails to check for valid domain. I tried to use the regex syntax according to https://regexr.com/, but is still possible to submit an email without a valid domain (e.g., name@domain is allowed)
-
+- email validation: fails to check for valid domain. I tried to use the regex syntax according to https://regexr.com/, but is still possible to submit an email without a valid domain (for instance, name@domain is allowed)
+- the uploading of the Gallery page is rather slow, despite using the lazy-loading attribute for each of the images.
+ ![Email bug](assets/images/readme-views/email-bug.webp)  
 ## Credits
 - The AI-images were generated using the free-tier functionality provided by https://playground.ai/. 
 - The image files in the Gallery page were downloaded from unsplash.com website. For each image in the gallery, the link to the file sources were provided and are accessible through the "Source"-reference available in the image cards. 
-- The use of ChatGPS was restrictes to getting sensible inputs for the text content in the website. No html and css code was produced using AI-models.
+- The use of ChatGPT was restrictes to getting sensible inputs for the text content in the website. No HTML nor CSS code was produced using AI-models.
 - A special aknowledgment should go to Kevin Powels' YouTube channel (https://www.youtube.com/@KevinPowell) where interesting topics such as the use of flex and grid layouts, form validation and tips on VScode for web development (among others) are discussed.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ###
-
-    ###
