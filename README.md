@@ -16,11 +16,16 @@ All pages share a few common features such as:
         - The name of the active page is uderlined in the menu bar
         - The page names scale up when hovering over them while the cursor changes to pointer-style  
     - Includes links to the Logo as well as to the Home, Gallery and Join-Us pages 
+    ![Navbar small screen](assets/images/readme-views/navbar-smallscreen.webp)
+    ![Navbar small screen](assets/images/readme-views/navbar-smallscreen-toogle.webp)
+     ![Navbar small screen](assets/images/readme-views/navbar-largescreen.webp)
+
   * Footer
     - Consistent on each page   
     - Contains icons/links to some of the major media-platforms (Facebook, Twitter, YouTube and Instagram)
         - The provided links open in new tabs
-        - When hovering, the icons scale up and change the opacity   
+        - When hovering, the icons scale up and change the opacity
+    ![Footer](assets/images/readme-views/footer.webp)   
 
 ### Home page
 The Home page is page is fully responsive and contains the following sections: 
