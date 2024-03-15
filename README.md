@@ -1,4 +1,4 @@
-# Welcome to Purrfecto - the cat enthusiast' hub 
+# Welcome to Purrfecto - the hub where cat lovers unite!
 Purrfecto is an online hub where cat lovers (an dnot only) can share and enjoy images (and possibly videos) of their beloved feline friends. 
 The site aims to helping people of all ages across the world to connect and build-up a vibrant community.
 
